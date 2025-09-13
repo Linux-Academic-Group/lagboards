@@ -1,0 +1,304 @@
+meta:
+  engine: 4.1.0
+# U: 19.05 # 19.05mm MX spacing
+# u: 19 # 19mm MX spacing
+# cx: 18 # 18mm Choc X spacing
+# cy: 17 # 17mm Choc Y spacing
+units:
+  # Proxy Spacing Variables
+  kx: U
+  ky: U
+  # Padding Variables
+  P: 4
+  px: kx + P
+  py: ky + P
+
+  mcux: 18
+  mcuy: 36
+  jacky: 6
+  jackx: 14
+  oledx: 12
+  oledy: 5
+  
+
+points:
+  zones:
+    matrix:
+      # Fix placement on KiCAD sheet.
+      anchor:
+        shift: [100, -100]
+      key:
+        padding: 1.05ky
+        spread: 1.05kx
+      columns:
+        outer:
+          key.column_net: P4
+        pinky: 
+          key.column_net: P5
+        ring:
+          key:
+            stagger: 5
+            column_net: P6
+            splay: -2
+        middle:
+          key:
+            stagger: 5
+            column_net: P7
+        index:
+          key:
+            stagger: -2.5
+            column_net: P8
+        inner:
+          key:
+            stagger: -2.5
+            column_net: P9
+      rows:
+        bottom:
+          row_net: P16
+        home:
+          row_net: P14
+        top:
+          row_net: P15
+        num:
+          row_net: P18
+    
+    thumb_top:
+      key:
+        padding: 1.05ky
+        spread: 1.1kx
+      anchor:
+        ref: matrix_index_bottom
+        shift: [0, -1.1ky-1]
+        rotate: 0
+      columns:
+        outer:
+          key.column_net: P4
+        middle:
+          key.column_net: P5
+        inner:
+          key.column_net: P7
+      rows:
+        rowt:
+          row_net: P10
+          splay: -5
+
+    thumb_bottom:
+      key:
+        padding: 1.05ky
+        spread: 1.05kx
+      anchor:
+        ref: thumb_top_inner_rowt
+        shift: [0, -1.05ky]
+      columns:
+        middle:
+          key.spread: ky
+          key.column_net: P6
+        inner:
+          key:
+            column_net: P8
+            width: 1.5kx
+            rotate: 90
+            shift: [0.1ky, 0.5kx]
+      rows:
+        rowb:
+          row_net: P10
+  rotate: -15
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      bound: true
+      size: [kx, ky]
+  keys:
+    - what: rectangle
+      where: true
+      bound: false
+      size: [kx-0.5,ky-0.5]
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_outer_num
+          shift: [-0.5px,0.5py]
+        - ref: matrix_middle_num
+          shift: [-0.5px,0.5py]
+        - ref: matrix_middle_num
+          shift: [0.5px,0.5py]
+        - ref: matrix_inner_num
+          shift: [1.4px,0.75py]
+        - ref: matrix_inner_bottom
+          shift: [1.4px,-0.5py]
+        - ref: thumb_bottom_inner_rowb
+          shift: [0.75px,-0.5py]
+        - ref: thumb_bottom_inner_rowb
+          shift: [-0.75px,-0.5py]
+        - ref: thumb_bottom_middle_rowb
+          shift: [0.5px,-0.5py]
+        - ref: thumb_bottom_middle_rowb
+          shift: [-0.5px,-0.5py]
+        - ref: thumb_top_outer_rowt
+          shift: [-0.5px,-0.5py]
+        - ref: matrix_outer_bottom
+          shift: [-0.5px,-0.5py]
+      fillet: 3
+  combo:
+    - name: board
+    - operation: subtract
+      name: keys
+pcbs:
+  lag_large:
+    template: kicad8
+    outlines:
+      main:
+        outline: board
+    footprints:
+      choc_hotswap:
+        what: mx
+        where: true
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diode:
+        what: diode_tht_sod123
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      mcu:
+        what: promicro_pretty
+        params:
+          # orientation: "down"
+          reversable_pins: 13
+        where:
+          ref: matrix_inner_num
+          shift: [21,-2]
+      reset:
+        what: wuerth-434121025816 
+        params:
+          r1: RST
+          r2: GND
+        where:
+          ref: matrix_inner_num
+          shift: [17, -33]
+          rotate: -90
+      on_off_switch:
+        what: pcm12
+        params:
+          from: sw1
+          to: RAW
+        where:
+          ref: matrix_inner_num
+          shift: [0, 0.5px + 2]
+          rotate: 180
+      jack: 
+        what: trrs_pj320a
+        params:
+          TP: VCC
+          R1: ""
+          R2: ""
+          SL: GND
+        where:
+          ref: matrix_inner_num
+          shift: [29, -44]
+          rotate: -90
+      battery_connector:
+        what: jst-s2b-ph-kl
+        params:
+          neg: GND
+          pos: sw1
+        where:
+          ref: matrix_inner_num
+          shift: [24,-34]
+          rotate: 90
+      encoder:
+        what: rotary_encoder_ec11_ec12
+        params:
+          S1: P9
+          S2: en_s2
+          A: P0
+          B: GND
+          C: P1
+        where:
+          ref: matrix_inner_num
+          shift: [23,-61]
+      encoder_diode:
+        what: diode_tht_sod123
+        params:
+          from: en_s2
+          to: P10
+        where:
+          ref: matrix_inner_num
+          shift: [23,-51]
+      oled:
+        what: oled_rev
+        params:
+          reverse: true
+          # SDA: ""
+          # SCL: ""
+          # CS: ""
+        where:
+          ref: matrix_inner_num
+          shift: [21, -38]
+          rotate: 180
+      mhole0:
+        what: mounting_hole_plated
+        params:
+          drill: 1.2
+        where:
+          ref: thumb_bottom_inner_rowb
+          shift: [6.5, 0]
+      mhole1:
+        what: mounting_hole_plated
+        params:
+          drill: 1.2
+        where:
+          ref: thumb_bottom_inner_rowb
+          shift: [-6.5, 0]
+      # https://www.amphenol-cs.com/product/sfv5r4ste1hlf.html
+      flex_connector:
+        what: AMPHENOL_SFV5R-4STE1HLF
+        params:
+          x_axis: P21
+          y_axis: P20
+          SW: P19
+        where:
+          ref: thumb_bottom_inner_rowb
+          shift: [17, 0]
+      mhole2:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts: [matrix_outer_num, matrix_pinky_top]
+      mhole3:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts: [matrix_inner_num, matrix_index_top]
+      mhole4:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts: [matrix_outer_bottom, matrix_pinky_home]
+      mhole5:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts: [matrix_middle_bottom, matrix_index_home]
+      mhole6:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts: [thumb_top_middle_rowt, thumb_bottom_middle_rowb]
+      mhole7:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts: [matrix_ring_num, matrix_middle_top]
+      mhole8:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts: [matrix_inner_bottom, matrix_inner_home]
+          shift: [0.5kx, 0]
+          
+
+
+
