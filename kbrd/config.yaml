@@ -21,7 +21,7 @@ units:
   oledy: 5
   
 
-points:
+:
   zones:
     matrix:
       # Fix placement on KiCAD sheet.
@@ -39,7 +39,6 @@ points:
           key:
             stagger: 5
             column_net: P6
-            splay: -2
         middle:
           key:
             stagger: 5
@@ -125,11 +124,19 @@ outlines:
         - ref: matrix_middle_num
           shift: [0.5px,0.5py]
         - ref: matrix_inner_num
-          shift: [1.4px,0.75py]
+          shift: [1.5px,0.75py]
         - ref: matrix_inner_bottom
-          shift: [1.4px,-0.5py]
+          shift: [1.5px,-0.5py]
         - ref: thumb_bottom_inner_rowb
           shift: [0.75px,-0.5py]
+        - ref: thumb_bottom_inner_rowb
+          shift: [0.15px,-0.5py]
+        - ref: thumb_bottom_inner_rowb
+          shift: [0.15px,-0.45py]
+        - ref: thumb_bottom_inner_rowb
+          shift: [-0.15px,-0.45py]
+        - ref: thumb_bottom_inner_rowb
+          shift: [-0.15px,-0.5py]
         - ref: thumb_bottom_inner_rowb
           shift: [-0.75px,-0.5py]
         - ref: thumb_bottom_middle_rowb
@@ -170,13 +177,17 @@ pcbs:
         adjust:
           shift: [0, -5]
       mcu:
-        what: promicro_pretty
+        what: mcu_supermini_nrf52840
         params:
           # orientation: "down"
-          reversable_pins: 13
+          # reversable_pins: 13
+          reversible: true
+          reverse_mount: false
+          include_extra_pins: true
+          only_required_jumpers: true
         where:
           ref: matrix_inner_num
-          shift: [21,-2]
+          shift: [21,-1]
       reset:
         what: wuerth-434121025816 
         params:
@@ -198,13 +209,15 @@ pcbs:
       jack: 
         what: trrs_pj320a
         params:
+          reversible: true
+          symmetric: true
           TP: VCC
           R1: ""
-          R2: ""
+          R2: P0
           SL: GND
         where:
           ref: matrix_inner_num
-          shift: [29, -44]
+          shift: [31, -44]
           rotate: -90
       battery_connector:
         what: jst-s2b-ph-kl
@@ -213,19 +226,19 @@ pcbs:
           pos: sw1
         where:
           ref: matrix_inner_num
-          shift: [24,-34]
+          shift: [26,-34]
           rotate: 90
       encoder:
         what: rotary_encoder_ec11_ec12
         params:
           S1: P9
           S2: en_s2
-          A: P0
+          A: P101
           B: GND
-          C: P1
+          C: P102
         where:
           ref: matrix_inner_num
-          shift: [23,-61]
+          shift: [23,-63]
       encoder_diode:
         what: diode_tht_sod123
         params:
@@ -233,13 +246,13 @@ pcbs:
           to: P10
         where:
           ref: matrix_inner_num
-          shift: [23,-51]
+          shift: [23,-53]
       oled:
         what: oled_rev
         params:
           reverse: true
-          # SDA: ""
-          # SCL: ""
+          SDA: P2
+          SCL: P3
           # CS: ""
         where:
           ref: matrix_inner_num
@@ -268,7 +281,7 @@ pcbs:
           SW: P19
         where:
           ref: thumb_bottom_inner_rowb
-          shift: [17, 0]
+          shift: [20, 0]
       mhole2:
         what: mounting_hole_plated
         where:
@@ -289,15 +302,6 @@ pcbs:
         what: mounting_hole_plated
         where:
           ref.aggregate.parts: [thumb_top_middle_rowt, thumb_bottom_middle_rowb]
-      mhole7:
-        what: mounting_hole_plated
-        where:
-          ref.aggregate.parts: [matrix_ring_num, matrix_middle_top]
-      mhole8:
-        what: mounting_hole_plated
-        where:
-          ref.aggregate.parts: [matrix_inner_bottom, matrix_inner_home]
-          shift: [0.5kx, 0]
           
 
 
