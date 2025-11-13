@@ -10,8 +10,8 @@
   )
   (paper "A3")
   (title_block
-    (title "lagbord")
-    (date "2025-08-19")
+    (title "ergofunctor")
+    (date "2025-11-13")
     (rev "v1.0.0")
     (company "Unknown")
   )
@@ -3488,10 +3488,10 @@
 
   
   
-        (fp_text user "R. Side - Jumper Here" (at 0 19 0) (layer F.SilkS)
+        (fp_text user "Right - Jumper Here" (at 0 -16 0) (layer F.SilkS)
           (effects (font (size 1 1) (thickness 0.15)))
         )
-        (fp_text user "L. Side - Jumper Here" (at 0 19 0) (layer B.SilkS)
+        (fp_text user "Left - Jumper Here" (at 0 -16 0) (layer B.SilkS)
           (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
         )
     
@@ -3560,54 +3560,13 @@
             (fp_line (start 3.1 2.05) (end 3.1 1.1) (layer F.SilkS) (width 0.2))
             (fp_circle (center -2.6 -1.2) (end -2.5 -1.2) (layer F.SilkS) (width 0.2))
 
-            (pad 1 thru_hole rect (at -3.25 0.0 -90) (size 1.5 1.4) (drill 0.3) (layers *.Cu *.Mask) (net 49 "RST"))
-            (pad 2 thru_hole rect (at 3.25 0.0 -90) (size 1.5 1.4) (drill 0.3) (layers *.Cu *.Mask) (net 51 "GND"))
+            (pad 1 thru_hole oval (at -3.25 0.0 -90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (net 49 "RST"))
+            (pad 2 thru_hole oval (at 3.25 0.0 -90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (net 51 "GND"))
         )
     
 
-          
-      (module TRRS-PJ-320A-dual (layer F.Cu) (tedit 5970F8E5)
-
-      (at 173.8657049 86.37389280000002 -90)   
-
-      
-      (fp_text reference "TRRS1" (at 0 14.2) (layer Dwgs.User) (effects (font (size 1 1) (thickness 0.15))))
-      (fp_text value TRRS-PJ-320A-dual (at 0 -5.6) (layer F.Fab) (effects (font (size 1 1) (thickness 0.15))))
-
-      
-      (fp_line (start 0.5 -2) (end -5.1 -2) (layer Dwgs.User) (width 0.15))
-      (fp_line (start -5.1 0) (end -5.1 -2) (layer Dwgs.User) (width 0.15))
-      (fp_line (start 0.5 0) (end 0.5 -2) (layer Dwgs.User) (width 0.15))
-      (fp_line (start -5.35 0) (end -5.35 12.1) (layer Dwgs.User) (width 0.15))
-      (fp_line (start 0.75 0) (end 0.75 12.1) (layer Dwgs.User) (width 0.15))
-      (fp_line (start 0.75 12.1) (end -5.35 12.1) (layer Dwgs.User) (width 0.15))
-      (fp_line (start 0.75 0) (end -5.35 0) (layer Dwgs.User) (width 0.15))
-
-      
-          
-        (pad "" np_thru_hole circle (at -2.3 8.6) (size 1.5 1.5) (drill 1.5) (layers *.Cu *.Mask))
-        (pad "" np_thru_hole circle (at -2.3 1.6) (size 1.5 1.5) (drill 1.5) (layers *.Cu *.Mask))
-      
-          
-        (pad "" np_thru_hole circle (at 0 8.6) (size 1.5 1.5) (drill 1.5) (layers *.Cu *.Mask))
-        (pad "" np_thru_hole circle (at 0 1.6) (size 1.5 1.5) (drill 1.5) (layers *.Cu *.Mask))
-      
-          
-        (pad 1 thru_hole oval (at -2.3 11.3 -90) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 0 ""))
-        (pad 2 thru_hole oval (at 2.3 10.2 -90) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 0 ""))
-        (pad 3 thru_hole oval (at 2.3 6.2 -90) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 0 ""))
-        (pad 4 thru_hole oval (at 2.3 3.2 -90) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 0 ""))
-      
-          
-        (pad 1 thru_hole oval (at 0 11.3 -90) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 0 ""))
-        (pad 2 thru_hole oval (at -4.6 10.2 -90) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 0 ""))
-        (pad 3 thru_hole oval (at -4.6 6.2 -90) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 0 ""))
-        (pad 4 thru_hole oval (at -4.6 3.2 -90) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 0 ""))
-      )
-        
-
         (footprint "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
-            (at 173.8657049 76.87389280000002 180)
+            (at 173.8657049 86.87389280000002 180)
             (descr "JST PH series connector, S2B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator")
             (tags "connector JST PH top entry")
             (attr through_hole)
@@ -3684,8 +3643,8 @@
             (fp_line (start 3.95 -1.35) (end 3.25 -1.35) (stroke (width 0.1) (type solid)) (layer "B.Fab"))
             (fp_line (start 3.95 6.25) (end 3.95 -1.35) (stroke (width 0.1) (type solid)) (layer "B.Fab"))
 
-            (pad "1" thru_hole roundrect (at 0 0 180) (size 1.2 1.75) (drill 0.75) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.208333) (net 78 "pos"))
-            (pad "2" thru_hole oval (at 2 0 180) (size 1.2 1.75) (drill 0.75) (layers "*.Cu" "*.Mask") (net 48 "B-"))
+            (pad "1" thru_hole roundrect (at 0 0 180) (size 1.2 1.75) (drill 0.75) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.208333) (net 48 "B-"))
+            (pad "2" thru_hole oval (at 2 0 180) (size 1.2 1.75) (drill 0.75) (layers "*.Cu" "*.Mask") (net 78 "pos"))
         )
     
 
@@ -3742,6 +3701,118 @@
 
         )
     
+(footprint AMPHENOL_SFV5R-4STE1HLF
+(at 179.9461216 122.28744149999999 -20)
+(layer "F.Cu")
+(property "Reference" "XX1" hide (at 0 0 -20) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+(property "Value" "" hide (at 0 0 -20) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))))
+(property "Datasheet" "" hide (at 0 0 -20) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))))
+(property "Description" "" hide (at 0 0 -20) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))))
+(descr "")
+(attr smd)
+(pad "1" smd rect (at -1.0 -2.4 -20) (size 0.3 1.4) (layers "F.Cu" "F.Mask" "F.Paste") (solder_mask_margin 0.102) (net 50 "VCC"))
+(pad "2" smd rect (at -0.5 -2.4 -20) (size 0.3 1.4) (layers "F.Cu" "F.Mask" "F.Paste") (solder_mask_margin 0.102) (net 39 "P20"))
+(pad "3" smd rect (at 0.0 -2.4 -20) (size 0.3 1.4) (layers "F.Cu" "F.Mask" "F.Paste") (solder_mask_margin 0.102) (net 40 "P19"))
+(pad "4" smd rect (at 0.5 -2.4 -20) (size 0.3 1.4) (layers "F.Cu" "F.Mask" "F.Paste") (solder_mask_margin 0.102) (net 51 "GND"))
+(pad "5" smd rect (at 1.0 -2.4 -20) (size 0.3 1.4) (layers "F.Cu" "F.Mask" "F.Paste") (solder_mask_margin 0.102) (net 38 "P21"))
+(pad "SH1" smd custom (at -2.425 -1.5 -20) (size 1.0 1.0) (layers "F.Cu") (options (clearance outline) (anchor rect)) (primitives (gr_poly (pts (xy -0.975 -0.8) (xy 0.975 -0.8) (xy 0.975 1.5) (xy -0.275 1.5) (xy -0.275 0.8) (xy -1.675 0.8) (xy -1.675 -0.3) (xy -0.975 -0.3)) (width 0.01))) (net 0 ""))
+(pad "SH2" smd custom (at 2.425 -1.5 -20) (size 1.0 1.0) (layers "F.Cu") (options (clearance outline) (anchor rect)) (primitives (gr_poly (pts (xy 0.975 -0.8) (xy -0.975 -0.8) (xy -0.975 1.5) (xy 0.275 1.5) (xy 0.275 0.8) (xy 1.675 0.8) (xy 1.675 -0.3) (xy 0.975 -0.3)) (width 0.01))) (net 0 ""))
+(fp_line (start -4.35 -3.35) (end 4.35 -3.35) (layer "F.CrtYd") (width 0.05))
+(fp_line (start 4.35 -3.35) (end 4.35 3.75) (layer "F.CrtYd") (width 0.05))
+(fp_line (start 4.35 3.75) (end -4.35 3.75) (layer "F.CrtYd") (width 0.05))
+(fp_line (start -4.35 3.75) (end -4.35 -3.35) (layer "F.CrtYd") (width 0.05))
+(fp_line (start -3.2 -2.1) (end 3.2 -2.1) (layer "F.Fab") (width 0.127))
+(fp_line (start 3.2 -2.1) (end 3.2 0.7) (layer "F.Fab") (width 0.127))
+(fp_line (start 3.2 0.7) (end 4.0 0.7) (layer "F.Fab") (width 0.127))
+(fp_line (start 4.0 0.7) (end 4.0 2.1) (layer "F.Fab") (width 0.127))
+(fp_line (start 4.0 2.1) (end -4.0 2.1) (layer "F.Fab") (width 0.127))
+(fp_line (start -4.0 2.1) (end -4.0 0.7) (layer "F.Fab") (width 0.127))
+(fp_line (start -4.0 0.7) (end -3.2 0.7) (layer "F.Fab") (width 0.127))
+(fp_line (start -3.2 0.7) (end -3.2 -2.1) (layer "F.Fab") (width 0.127))
+(fp_line (start 4.0 2.1) (end 4.0 3.5) (layer "F.Fab") (width 0.127))
+(fp_line (start 4.0 3.5) (end -4.0 3.5) (layer "F.Fab") (width 0.127))
+(fp_line (start -4.0 3.5) (end -4.0 2.1) (layer "F.Fab") (width 0.127))
+(fp_poly (pts (xy -3.5 -2.4) (xy -1.35 -2.4) (xy -1.35 0.1) (xy -2.8 0.1) (xy -2.8 -0.6) (xy -4.2 -0.6) (xy -4.2 -1.9) (xy -3.5 -1.9)) (layer "F.Mask") (width 0.01))
+(fp_poly (pts (xy 3.5 -2.4) (xy 1.35 -2.4) (xy 1.35 0.1) (xy 2.8 0.1) (xy 2.8 -0.6) (xy 4.2 -0.6) (xy 4.2 -1.9) (xy 3.5 -1.9)) (layer "F.Mask") (width 0.01))
+(fp_poly (pts (xy -3.4 -2.3) (xy -1.45 -2.3) (xy -1.45 0) (xy -2.7 0) (xy -2.7 -0.7) (xy -4.1 -0.7) (xy -4.1 -1.8) (xy -3.4 -1.8)) (layer "F.Paste") (width 0.01))
+(fp_poly (pts (xy 3.4 -2.3) (xy 1.45 -2.3) (xy 1.45 0) (xy 2.7 0) (xy 2.7 -0.7) (xy 4.1 -0.7) (xy 4.1 -1.8) (xy 3.4 -1.8)) (layer "F.Paste") (width 0.01))
+(fp_line (start -3.2 -0.38) (end -3.2 0.7) (layer "F.SilkS") (width 0.127))
+(fp_line (start -3.2 0.7) (end -4.0 0.7) (layer "F.SilkS") (width 0.127))
+(fp_line (start -4.0 0.7) (end -4.0 2.1) (layer "F.SilkS") (width 0.127))
+(fp_line (start -4.0 2.1) (end 4.0 2.1) (layer "F.SilkS") (width 0.127))
+(fp_line (start 4.0 2.1) (end 4.0 0.7) (layer "F.SilkS") (width 0.127))
+(fp_line (start 4.0 0.7) (end 3.2 0.7) (layer "F.SilkS") (width 0.127))
+(fp_line (start 3.2 0.7) (end 3.2 -0.38) (layer "F.SilkS") (width 0.127))
+(pad "11" smd rect (at -1.0 -2.4 -20) (size 0.3 1.4) (layers "B.Cu" "B.Mask" "B.Paste") (solder_mask_margin 0.102) (net 38 "P21"))
+(pad "12" smd rect (at -0.5 -2.4 -20) (size 0.3 1.4) (layers "B.Cu" "B.Mask" "B.Paste") (solder_mask_margin 0.102) (net 51 "GND"))
+(pad "13" smd rect (at 0.0 -2.4 -20) (size 0.3 1.4) (layers "B.Cu" "B.Mask" "B.Paste") (solder_mask_margin 0.102) (net 40 "P19"))
+(pad "14" smd rect (at 0.5 -2.4 -20) (size 0.3 1.4) (layers "B.Cu" "B.Mask" "B.Paste") (solder_mask_margin 0.102) (net 39 "P20"))
+(pad "15" smd rect (at 1.0 -2.4 -20) (size 0.3 1.4) (layers "B.Cu" "B.Mask" "B.Paste") (solder_mask_margin 0.102) (net 50 "VCC"))
+(pad "SH11" smd custom (at -2.425 -1.5 -20) (size 1.0 1.0) (layers "B.Cu") (options (clearance outline) (anchor rect)) (primitives (gr_poly (pts (xy -0.975 -0.8) (xy 0.975 -0.8) (xy 0.975 1.5) (xy -0.275 1.5) (xy -0.275 0.8) (xy -1.675 0.8) (xy -1.675 -0.3) (xy -0.975 -0.3)) (width 0.01))) (net 0 ""))
+(pad "SH12" smd custom (at 2.425 -1.5 -20) (size 1.0 1.0) (layers "B.Cu") (options (clearance outline) (anchor rect)) (primitives (gr_poly (pts (xy 0.975 -0.8) (xy -0.975 -0.8) (xy -0.975 1.5) (xy 0.275 1.5) (xy 0.275 0.8) (xy 1.675 0.8) (xy 1.675 -0.3) (xy 0.975 -0.3)) (width 0.01))) (net 0 ""))
+(fp_line (start -4.35 -3.35) (end 4.35 -3.35) (layer "B.CrtYd") (width 0.05))
+(fp_line (start 4.35 -3.35) (end 4.35 3.75) (layer "B.CrtYd") (width 0.05))
+(fp_line (start 4.35 3.75) (end -4.35 3.75) (layer "B.CrtYd") (width 0.05))
+(fp_line (start -4.35 3.75) (end -4.35 -3.35) (layer "B.CrtYd") (width 0.05))
+(fp_line (start -3.2 -2.1) (end 3.2 -2.1) (layer "B.Fab") (width 0.127))
+(fp_line (start 3.2 -2.1) (end 3.2 0.7) (layer "B.Fab") (width 0.127))
+(fp_line (start 3.2 0.7) (end 4.0 0.7) (layer "B.Fab") (width 0.127))
+(fp_line (start 4.0 0.7) (end 4.0 2.1) (layer "B.Fab") (width 0.127))
+(fp_line (start 4.0 2.1) (end -4.0 2.1) (layer "B.Fab") (width 0.127))
+(fp_line (start -4.0 2.1) (end -4.0 0.7) (layer "B.Fab") (width 0.127))
+(fp_line (start -4.0 0.7) (end -3.2 0.7) (layer "B.Fab") (width 0.127))
+(fp_line (start -3.2 0.7) (end -3.2 -2.1) (layer "B.Fab") (width 0.127))
+(fp_line (start 4.0 2.1) (end 4.0 3.5) (layer "B.Fab") (width 0.127))
+(fp_line (start 4.0 3.5) (end -4.0 3.5) (layer "B.Fab") (width 0.127))
+(fp_line (start -4.0 3.5) (end -4.0 2.1) (layer "B.Fab") (width 0.127))
+(fp_poly (pts (xy -3.5 -2.4) (xy -1.35 -2.4) (xy -1.35 0.1) (xy -2.8 0.1) (xy -2.8 -0.6) (xy -4.2 -0.6) (xy -4.2 -1.9) (xy -3.5 -1.9)) (layer "B.Mask") (width 0.01))
+(fp_poly (pts (xy 3.5 -2.4) (xy 1.35 -2.4) (xy 1.35 0.1) (xy 2.8 0.1) (xy 2.8 -0.6) (xy 4.2 -0.6) (xy 4.2 -1.9) (xy 3.5 -1.9)) (layer "B.Mask") (width 0.01))
+(fp_poly (pts (xy -3.4 -2.3) (xy -1.45 -2.3) (xy -1.45 0) (xy -2.7 0) (xy -2.7 -0.7) (xy -4.1 -0.7) (xy -4.1 -1.8) (xy -3.4 -1.8)) (layer "B.Paste") (width 0.01))
+(fp_poly (pts (xy 3.4 -2.3) (xy 1.45 -2.3) (xy 1.45 0) (xy 2.7 0) (xy 2.7 -0.7) (xy 4.1 -0.7) (xy 4.1 -1.8) (xy 3.4 -1.8)) (layer "B.Paste") (width 0.01))
+(fp_line (start -3.2 -0.38) (end -3.2 0.7) (layer "B.SilkS") (width 0.127))
+(fp_line (start -3.2 0.7) (end -4.0 0.7) (layer "B.SilkS") (width 0.127))
+(fp_line (start -4.0 0.7) (end -4.0 2.1) (layer "B.SilkS") (width 0.127))
+(fp_line (start -4.0 2.1) (end 4.0 2.1) (layer "B.SilkS") (width 0.127))
+(fp_line (start 4.0 2.1) (end 4.0 0.7) (layer "B.SilkS") (width 0.127))
+(fp_line (start 4.0 0.7) (end 3.2 0.7) (layer "B.SilkS") (width 0.127))
+(fp_line (start 3.2 0.7) (end 3.2 -0.38) (layer "B.SilkS") (width 0.127))
+)
+
+  (footprint "ceoloide:mounting_hole_plated"
+    (layer "F.Cu")
+    (at 184.254204 144.0748329 70)
+    (property "Reference" "H1"
+      (at 0 3 70)
+      (layer "F.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    
+    (pad "" thru_hole circle (at 0 0 70) (size 2.8 2.8) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    
+    (fp_circle (center 0 0) (end -1.65 0) (layer "F.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    (fp_circle (center 0 0) (end -1.65 0) (layer "B.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    
+  )
+    
+
+  (footprint "ceoloide:mounting_hole_plated"
+    (layer "F.Cu")
+    (at 162.6412738 136.2083697 70)
+    (property "Reference" "H2"
+      (at 0 3 70)
+      (layer "F.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    
+    (pad "" thru_hole circle (at 0 0 70) (size 2.8 2.8) (drill 1.2) (layers "*.Cu" "*.Mask"))
+    
+    (fp_circle (center 0 0) (end -1.65 0) (layer "F.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    (fp_circle (center 0 0) (end -1.65 0) (layer "B.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
+    
+  )
+    
   (gr_line (start 37.8630091 93.5081048) (end 34.19375240000001 51.568308) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 34.19375240000001 51.568308) (end 51.178872000000005 50.082302600000006) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 51.178872000000005 50.082302600000006) (end 54.6987618 44.99366020000001) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
@@ -3760,12 +3831,10 @@
 (gr_line (start 155.8657049 91.37389280000002) (end 155.8657049 97.52389280000001) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 155.8657049 97.52389280000001) (end 159.111215 102.3862979) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 159.111215 102.3862979) (end 173.25358889999998 107.5337011) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 173.25358889999998 107.5337011) (end 168.4321239 120.22504459999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 168.4321239 120.22504459999999) (end 190.09203879999998 128.10860889999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 190.09203879999998 128.10860889999998) (end 178.4633539 160.058158) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 178.4633539 160.058158) (end 158.6828243 152.858634) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 158.6828243 152.858634) (end 156.9751557 146.4107201) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 156.9751557 146.4107201) (end 119.29348159999999 132.6957124) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 173.25358889999998 107.5337011) (end 171.8523253 110.8281184) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 171.8523253 110.8281184) (end 195.6782317 119.5000391) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 195.6782317 119.5000391) (end 182.50190569999998 155.70169729999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 119.29348159999999 132.6957124) (end 182.50190569999998 155.70169729999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 119.29348159999999 132.6957124) (end 116.9027917 127.5688613) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 116.9027917 127.5688613) (end 58.035945999999996 106.0852774) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 58.035945999999996 106.0852774) (end 57.1891411 95.8325667) (layer Edge.Cuts) (stroke (width 0.15) (type default)))

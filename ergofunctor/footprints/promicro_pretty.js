@@ -284,10 +284,10 @@ module.exports = {
 
     /* Instructions about which side the solder should be on. */
     const instructions = `
-        (fp_text user "R. Side - Jumper Here" (at 0 19 ${p.rot}) (layer F.SilkS)
+        (fp_text user "Right - Jumper Here" (at 0 -16 ${p.rot}) (layer F.SilkS)
           (effects (font (size 1 1) (thickness 0.15)))
         )
-        (fp_text user "L. Side - Jumper Here" (at 0 19 ${p.rot}) (layer B.SilkS)
+        (fp_text user "Left - Jumper Here" (at 0 -16 ${p.rot}) (layer B.SilkS)
           (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
         )
     `;

@@ -188,16 +188,16 @@ outlines:
         # ale joystick ma 26 mm szerokości
         - ref: thumb_inner
           orient: -90 # thumb_inner is rotated
-          shift: [-0.5px , 13 + P]
+          shift: [-0.5px , 13 + P + 10]
         - ref: thumb_inner
           orient: -90 # thumb_inner is rotated
-          shift: [0.5px, 13 + P]
+          shift: [0.6px, 13 + P + 10]
         - ref: thumb_inner
           orient: -90 # thumb_inner is rotated
-          shift: [0.5px, -(13 + P)]
+          shift: [0.6px, -0.5py]
         - ref: thumb_inner
           orient: -90 # thumb_inner is rotated
-          shift: [-0.5px + P/2,-(13 + P)]
+          shift: [-0.5px + P/2, -0.5py]
 
         ## thumb cluster bottom
         - ref: thumb_bottom_middle_row
@@ -296,23 +296,23 @@ pcbs:
           shift: [0.5px + 0mcux, -mcuy + 0.5ky - 0.5oledy ]
           rotate: -90
      
-      # TODO: zstanowić się czy TRRS potrzebny,
+      # Poki co trrs nie jest używany 
       # czy ktoś będzie chiał mieć wired wersje
       # a może po prostu druga wersja pcb
-      jack: 
-        what: trrs
-        # TODO: podłączyć do mcu
-        params:
-          reverse: true
-          A: ""
-          B: ""
-          C: ""
-          D: ""
-        # TODO: poprwaić placement
-        where:
-          ref: matrix_inner_top
-          shift: [0.5px + mcux, -mcuy + 0.5ky - oledy - 0.5jacky - P ]
-          rotate: -90
+      # jack: 
+      #   what: trrs
+      #   # TODO: podłączyć do mcu
+      #   params:
+      #     reverse: true
+      #     A: ""
+      #     B: ""
+      #     C: ""
+      #     D: ""
+      #   # TODO: poprwaić placement
+      #   where:
+      #     ref: matrix_inner_top
+      #     shift: [0.5px + mcux, -mcuy + 0.5ky - oledy - 0.5jacky - P ]
+      #     rotate: -90
 
       battery_connector:
         what: jst-s2b-ph-kl
@@ -322,7 +322,7 @@ pcbs:
         # TODO: poprwaić placement
         where:
           ref: matrix_inner_top
-          shift: [0.5px + mcux, -mcuy + 0.5ky - 0.5oledy ]
+          shift: [0.5px + mcux, -mcuy + 0.5ky - 0.5oledy - 10]
           rotate: 180
 
       on_off_switch:
@@ -337,12 +337,43 @@ pcbs:
           shift: [32, 3]
           rotate: 90
 
-          #TODO: dodrobić mounting hole na joystick:
+          # TODO: dodrobić mounting hole na joystick:
+          # 23 mm między dziórkami
+          # 7 mm długość paska od listwy
           # 13 mm od siebie po 1 mm 
           # nad i pod thumb_inner
           #
           # TODO: zrobić przerwe na listwe 
           # TODO: dodać footprint na port do listwy joysticka (https://www.amphenol-cs.com/product/sfv5r1ste1hlf.html)
+      
+      # https://www.amphenol-cs.com/product/sfv5r4ste1hlf.html
+      flex_connector:
+        what: AMPHENOL_SFV5R-4STE1HLF
+        params:
+          x_axis: P21
+          y_axis: P20
+          SW: P19
+        where:
+          ref: thumb_inner
+          rotate: -90
+          # shift: [7 + 8, 0]
+          shift: [19, 0]
+
+      mhole_joystick_0:
+        what: mounting_hole_plated
+        params:
+          drill: 1.2
+        where:
+          ref: thumb_inner
+          shift: [0, -11.5]
+
+      mhole_joystick_1:
+        what: mounting_hole_plated
+        params:
+          drill: 1.2
+        where:
+          ref: thumb_inner
+          shift: [0, 11.5]
 
 
 

@@ -16,6 +16,7 @@
     devShells.x86_64-linux.default = pkgs.mkShell {
       shellHook = ''
         alias efbo="ergogen . && open output/pcbs/lagbord.kicad_pcb"
+        alias watch="echo config.yaml | entr ./skypcik.sh"
       '';
 
       packages = with pkgs; [

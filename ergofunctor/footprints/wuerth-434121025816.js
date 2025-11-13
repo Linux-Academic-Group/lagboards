@@ -40,8 +40,8 @@ module.exports = {
             (fp_line (start 3.1 2.05) (end 3.1 1.1) (layer F.SilkS) (width 0.2))
             (fp_circle (center -2.6 -1.2) (end -2.5 -1.2) (layer F.SilkS) (width 0.2))
 
-            (pad 1 thru_hole rect (at -3.25 0.0 ${p.rot}) (size 1.5 1.4) (drill 0.3) (layers *.Cu *.Mask) ${p.r1.str})
-            (pad 2 thru_hole rect (at 3.25 0.0 ${p.rot}) (size 1.5 1.4) (drill 0.3) (layers *.Cu *.Mask) ${p.r2.str})
+            (pad 1 thru_hole oval (at -3.25 0.0 ${p.rot}) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) ${p.r1.str})
+            (pad 2 thru_hole oval (at 3.25 0.0 ${p.rot}) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) ${p.r2.str})
         )
     `
 }
