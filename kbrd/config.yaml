@@ -21,7 +21,7 @@ units:
   oledy: 5
   
 
-:
+points:
   zones:
     matrix:
       # Fix placement on KiCAD sheet.
@@ -130,14 +130,6 @@ outlines:
         - ref: thumb_bottom_inner_rowb
           shift: [0.75px,-0.5py]
         - ref: thumb_bottom_inner_rowb
-          shift: [0.15px,-0.5py]
-        - ref: thumb_bottom_inner_rowb
-          shift: [0.15px,-0.45py]
-        - ref: thumb_bottom_inner_rowb
-          shift: [-0.15px,-0.45py]
-        - ref: thumb_bottom_inner_rowb
-          shift: [-0.15px,-0.5py]
-        - ref: thumb_bottom_inner_rowb
           shift: [-0.75px,-0.5py]
         - ref: thumb_bottom_middle_rowb
           shift: [0.5px,-0.5py]
@@ -172,6 +164,7 @@ pcbs:
         what: diode_tht_sod123
         where: true
         params:
+          reversible: true
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
@@ -183,8 +176,6 @@ pcbs:
           # reversable_pins: 13
           reversible: true
           reverse_mount: false
-          include_extra_pins: true
-          only_required_jumpers: true
         where:
           ref: matrix_inner_num
           shift: [21,-1]
@@ -195,8 +186,17 @@ pcbs:
           r2: GND
         where:
           ref: matrix_inner_num
-          shift: [17, -33]
+          shift: [17, -44]
           rotate: -90
+      # on_off_switch:
+      #   what: pcm12
+      #   params:
+      #     from: sw1
+      #     to: RAW
+      #   where:
+      #     ref: matrix_inner_num
+      #     shift: [0, 0.5px + 2]
+      #     rotate: 180
       on_off_switch:
         what: pcm12
         params:
@@ -204,21 +204,21 @@ pcbs:
           to: RAW
         where:
           ref: matrix_inner_num
-          shift: [0, 0.5px + 2]
-          rotate: 180
-      jack: 
-        what: trrs_pj320a
-        params:
-          reversible: true
-          symmetric: true
-          TP: VCC
-          R1: ""
-          R2: P0
-          SL: GND
-        where:
-          ref: matrix_inner_num
-          shift: [31, -44]
-          rotate: -90
+          shift: [28, -44]
+          rotate: 90
+      # jack: 
+      #   what: trrs_pj320a
+      #   params:
+      #     reversible: true
+      #     symmetric: true
+      #     TP: VCC
+      #     R1: ""
+      #     R2: ""
+      #     SL: GND
+      #   where:
+      #     ref: matrix_inner_num
+      #     shift: [31, -44]
+      #     rotate: -90
       battery_connector:
         what: jst-s2b-ph-kl
         params:
@@ -226,16 +226,16 @@ pcbs:
           pos: sw1
         where:
           ref: matrix_inner_num
-          shift: [26,-34]
+          shift: [15,-34]
           rotate: 90
       encoder:
         what: rotary_encoder_ec11_ec12
         params:
           S1: P9
           S2: en_s2
-          A: P101
+          A: P0
           B: GND
-          C: P102
+          C: P1
         where:
           ref: matrix_inner_num
           shift: [23,-63]
@@ -258,30 +258,50 @@ pcbs:
           ref: matrix_inner_num
           shift: [21, -38]
           rotate: 180
-      mhole0:
-        what: mounting_hole_plated
-        params:
-          drill: 1.2
-        where:
-          ref: thumb_bottom_inner_rowb
-          shift: [6.5, 0]
-      mhole1:
-        what: mounting_hole_plated
-        params:
-          drill: 1.2
-        where:
-          ref: thumb_bottom_inner_rowb
-          shift: [-6.5, 0]
+      # mhole0:
+      #   what: mounting_hole_plated
+      #   params:
+      #     drill: 1.2
+      #   where:
+      #     ref: thumb_bottom_inner_rowb
+      #     shift: [6.5, 0]
+      # mhole1:
+      #   what: mounting_hole_plated
+      #   params:
+      #     drill: 1.2
+      #   where:
+      #     ref: thumb_bottom_inner_rowb
+      #     shift: [-6.5, 0]
       # https://www.amphenol-cs.com/product/sfv5r4ste1hlf.html
-      flex_connector:
-        what: AMPHENOL_SFV5R-4STE1HLF
+      # flex_connector:
+      #   what: AMPHENOL_SFV5R-4STE1HLF
+      #   params:
+      #     x_axis: P21
+      #     y_axis: P20
+      #     SW: P19
+      #   where:
+      #     ref: thumb_bottom_inner_rowb
+      #     shift: [20, 0]
+
+      # https://www.adafruit.com/product/5628
+      joystick_left:
+        what: joystick_left
         params:
-          x_axis: P21
-          y_axis: P20
+          AD1: P21
+          AD2: P20
           SW: P19
         where:
           ref: thumb_bottom_inner_rowb
-          shift: [20, 0]
+          shift: [-9, -8]
+      joystick_right:
+        what: joystick_right
+        params:
+          AD1: P21
+          AD2: P20
+          SW: P19
+        where:
+          ref: thumb_bottom_inner_rowb
+          shift: [9, -8]
       mhole2:
         what: mounting_hole_plated
         where:
