@@ -167,13 +167,17 @@ outlines:
         - ref: matrix_inner_top
           shift: [-0.5px + 1P, 0.5py]
         - ref: matrix_inner_top
-          shift: [0.5px + mcux + P, 0.5py]
+          shift: [0.5px + mcux + P + 1, 0.5py]
+        - ref: matrix_inner_top
+          shift: [0.5px + mcux + P + 1, 0.5py - 12]
+        - ref: matrix_inner_top
+          shift: [0.5px + mcux + 0.5P, 0.5py - 17]
 
         ## mcu bottom 
         - ref: matrix_inner_top
-          shift: [0.5px + mcux + P, 0.5py - mcuy - oledy - P - jacky - P]
+          shift: [0.5px + mcux + 0.5P, 0.5py - mcuy - 4.5P ]
         - ref: matrix_inner_top
-          shift: [0.5px , 0.5py - mcuy - oledy - P - jacky - P]
+          shift: [0.5px , 0.5py - mcuy - 4.5P]
         - ref: matrix_inner_bottom
           shift: [0.5px , -0.5py]
 
@@ -182,22 +186,24 @@ outlines:
           shift: [-0.5px + 2P,0.5py]
         - ref: thumb_top_middle_row
           shift: [0.5px, 0.5py]
+        - ref: thumb_top_middle_row
+          shift: [0.5px, 0.5py - 7]
 
         ## joystick
         # shift y w teorii (0.5py + ((1.5kx-kx)/2))
         # ale joystick ma 26 mm szerokości
         - ref: thumb_inner
           orient: -90 # thumb_inner is rotated
-          shift: [-0.5px , 13 + P + 10]
+          shift: [-0.5px + 5, 13 + P]
         - ref: thumb_inner
           orient: -90 # thumb_inner is rotated
-          shift: [0.6px, 13 + P + 10]
+          shift: [0.5px, 13 + P]
         - ref: thumb_inner
           orient: -90 # thumb_inner is rotated
-          shift: [0.6px, -0.5py]
+          shift: [0.5px, -(13 + P)]
         - ref: thumb_inner
           orient: -90 # thumb_inner is rotated
-          shift: [-0.5px + P/2, -0.5py]
+          shift: [-0.5px + P/2, -(13 + P)]
 
         ## thumb cluster bottom
         - ref: thumb_bottom_middle_row
@@ -251,131 +257,204 @@ pcbs:
         what: diode_tht_sod123
         where: true
         params:
+          reversible: true
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
           shift: [0, -5]
+      # mcu:
+      #   # TODO: zmienić napisy z footprintu: promicro -> ergofunctor
+      #   what: promicro_pretty
+      #   params:
+      #     # orientation: "down"
+      #     # label: false 
+      #     # instructions: false 
+      #     reversable_pins: 13
+      #   # TODO: poprwaić placement
+      #   where:
+      #     - ref: matrix_inner_top
+      #       # te 2.5 bo ten footprint dodaje napis nad MCU
+      #       shift: [0.5px + 0.5mcux, -0.5mcuy + 0.5ky + 2.5] 
+      #       # rotate: -90
       mcu:
-        # TODO: zmienić napisy z footprintu: promicro -> ergofunctor
-        what: promicro_pretty
+        what: mcu_supermini_nrf52840
         params:
           # orientation: "down"
-          # label: false 
-          # instructions: false 
-          reversable_pins: 13
-        # TODO: poprwaić placement
+          # reversable_pins: 13
+          reversible: true
+          reverse_mount: false
         where:
           - ref: matrix_inner_top
             # te 2.5 bo ten footprint dodaje napis nad MCU
             shift: [0.5px + 0.5mcux, -0.5mcuy + 0.5ky + 2.5] 
             # rotate: -90
-      oled:
-        what: oled
-        params:
-          side: "F"
-          SDA: P2
-          SCL: P3
-        # TODO: poprwaić placement
-        where:
-          ref: matrix_inner_top
-          shift: [0.5px + 0.5mcux - 6, -mcuy + 0.5ky - 0.5oledy ]
-          rotate: 90
       reset: 
-        # what: button  
-        # params:
-        #   from: GND
-        #   to: RST
         what: wuerth-434121025816 
         params:
           r1: RST
           r2: GND
-
-        # TODO: poprwaić placement
         where:
           ref: matrix_inner_top
-          shift: [0.5px + 0mcux, -mcuy + 0.5ky - 0.5oledy ]
+          shift: [0.5px + 0mcux + 2, -mcuy]
           rotate: -90
+      on_off_switch:
+        what: pcm12
+        params:
+          from: sw1
+          to: RAW
+        where:
+          ref: matrix_inner_top
+          shift: [0.5px + mcux + 3, 5]
+          rotate: 90
+      battery_connector:
+        what: jst-s2b-ph-kl
+        params:
+          neg: GND
+          pos: sw1
+        where:
+          ref: matrix_inner_top
+          # shift: [0.5px + mcux, -mcuy + 0.5ky - 0.5oledy - 1]
+          shift: [0.5px + 0.5mcux, -mcuy]
+          rotate: 90
+      oled:
+        what: oled_rev
+        params:
+          reverse: true
+          SDA: P2
+          SCL: P3
+          # CS: ""
+        where:
+          ref: matrix_inner_top
+          shift: [0.5px + 0.5mcux, -mcuy - 5]
+          rotate: 180
+
+      joystick_left:
+        what: joystick_left
+        params:
+          AD1: P21
+          AD2: P20
+          SW: P19
+        where:
+          ref: thumb_inner
+          shift: [-9, -8]
+      joystick_right:
+        what: joystick_right
+        params:
+          AD1: P21
+          AD2: P20
+          SW: P19
+        where:
+          ref: thumb_inner
+          shift: [9, -8]
+          # rotate: -90
+          # shift: [7 + 8, 0]
+          # shift: [19, 0]
+
+      mhole_pinky:
+        what: mounting_hole_plated
+        where:
+          # ref.aggregate.parts: [pinky_outer_home,pinky_inner_top]
+          ref.aggregate.parts: [pinky_outer_top,pinky_inner_home]
+
+      mhole_index:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts: [
+            matrix_inner_top,
+            matrix_index_home
+          ]
+
+      mhole_middle_up:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts: [
+            matrix_ring_top,
+            matrix_middle_home
+          ]
+
+      mhole_middle_down:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts: [
+            matrix_ring_bottom,
+            matrix_middle_bottom
+          ]
+          shift: [0,-0.5ky]
+
+      mhole_thumb:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts: [
+            thumb_top_middle_row,
+            thumb_bottom_middle_row,
+            thumb_top_outer_row,
+            thumb_bottom_outer_row
+          ]
+ 
+      # mhole3:
+      #   what: mounting_hole_plated
+      #   where:
+      #     ref.aggregate.parts: [matrix_inner_num, matrix_index_top]
+      # mhole4:
+      #   what: mounting_hole_plated
+      #   where:
+      #     ref.aggregate.parts: [matrix_outer_bottom, matrix_pinky_home]
+      # mhole5:
+      #   what: mounting_hole_plated
+      #   where:
+      #     ref.aggregate.parts: [matrix_middle_bottom, matrix_index_home]
+      # mhole6:
+      #   what: mounting_hole_plated
+      #   where:
+      #     ref.aggregate.parts: [thumb_top_middle_rowt, thumb_bottom_middle_rowb]
      
       # Poki co trrs nie jest używany 
       # czy ktoś będzie chiał mieć wired wersje
       # a może po prostu druga wersja pcb
       # jack: 
       #   what: trrs
-      #   # TODO: podłączyć do mcu
       #   params:
       #     reverse: true
       #     A: ""
       #     B: ""
       #     C: ""
       #     D: ""
-      #   # TODO: poprwaić placement
       #   where:
       #     ref: matrix_inner_top
       #     shift: [0.5px + mcux, -mcuy + 0.5ky - oledy - 0.5jacky - P ]
       #     rotate: -90
 
-      battery_connector:
-        what: jst-s2b-ph-kl
-        params:
-          neg: B- 
-          pos: pos
-        # TODO: poprwaić placement
-        where:
-          ref: matrix_inner_top
-          shift: [0.5px + mcux, -mcuy + 0.5ky - 0.5oledy - 10]
-          rotate: 180
-
-      on_off_switch:
-        what: pcm12
-        # TODO: zmienić na RAW - GND 
-        params:
-          from: pos
-          to: B+
-        # TODO: poprwaić placement
-        where:
-          ref: matrix_inner_top
-          shift: [32, 3]
-          rotate: 90
-
-          # TODO: dodrobić mounting hole na joystick:
-          # 23 mm między dziórkami
-          # 7 mm długość paska od listwy
-          # 13 mm od siebie po 1 mm 
-          # nad i pod thumb_inner
-          #
-          # TODO: zrobić przerwe na listwe 
-          # TODO: dodać footprint na port do listwy joysticka (https://www.amphenol-cs.com/product/sfv5r1ste1hlf.html)
       
+      # NOT TESTED OCULUS JOYSTICK
+      # 23 mm między dziórkami
+      # 7 mm długość paska od listwy
+      # 13 mm od siebie po 1 mm 
+      # nad i pod thumb_inner
       # https://www.amphenol-cs.com/product/sfv5r4ste1hlf.html
-      flex_connector:
-        what: AMPHENOL_SFV5R-4STE1HLF
-        params:
-          x_axis: P21
-          y_axis: P20
-          SW: P19
-        where:
-          ref: thumb_inner
-          rotate: -90
-          # shift: [7 + 8, 0]
-          shift: [19, 0]
-
-      mhole_joystick_0:
-        what: mounting_hole_plated
-        params:
-          drill: 1.2
-        where:
-          ref: thumb_inner
-          shift: [0, -11.5]
-
-      mhole_joystick_1:
-        what: mounting_hole_plated
-        params:
-          drill: 1.2
-        where:
-          ref: thumb_inner
-          shift: [0, 11.5]
-
-
-
-          #TODO: znaleść foot print na taki reset buttown:
-          # https://pl.aliexpress.com/item/1005005467675501.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.4.4c99UDJxUDJxdl&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=e755b253-656f-497e-aa2f-6ed1e59475bd&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40050.354490.0,pvid:e755b253-656f-497e-aa2f-6ed1e59475bd,tpp_buckets:668%232846%238110%231995&pdp_ext_f=%7B%22order%22%3A%2245%22%2C%22eval%22%3A%221%22%2C%22sceneId%22%3A%2230050%22%7D&pdp_npi=6%40dis%21PLN%214.86%214.79%21%21%211.30%211.28%21%40211b441e17556272241271580e3dc4%2112000033198615781%21rec%21PL%214617355533%21X%211%210%21n_tag%3A-29919%3Bm03_new_user%3A-29895&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A%7Cx_object_id%3A1005005467675501%7C_p_origin_prod%3A
+      # flex_connector:
+      #   what: AMPHENOL_SFV5R-4STE1HLF
+      #   params:
+      #     x_axis: P21
+      #     y_axis: P20
+      #     SW: P19
+      #   where:
+      #     ref: thumb_inner
+      #     rotate: -90
+      #     # shift: [7 + 8, 0]
+      #     shift: [19, 0]
+      #
+      # mhole_joystick_0:
+      #   what: mounting_hole_plated
+      #   params:
+      #     drill: 1.2
+      #   where:
+      #     ref: thumb_inner
+      #     shift: [0, -11.5]
+      #
+      # mhole_joystick_1:
+      #   what: mounting_hole_plated
+      #   params:
+      #     drill: 1.2
+      #   where:
+      #     ref: thumb_inner
+      #     shift: [0, 11.5]

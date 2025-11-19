@@ -17,6 +17,7 @@
       shellHook = ''
         alias efbo="ergogen . && open output/pcbs/lagbord.kicad_pcb"
         alias watch="echo config.yaml | entr ./skypcik.sh"
+        source ~/.bash_profile
       '';
 
       packages = with pkgs; [
