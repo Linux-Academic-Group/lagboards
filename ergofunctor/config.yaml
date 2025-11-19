@@ -29,50 +29,62 @@ points:
         shift: [50,-100] # Fix KiCad placement
       columns:
         outer:
-          key.column_net: C_P_OUTER
+          # key.column_net: C_P_OUTER
+          key.column_net: P4
           rows.bottom.skip: true
           # key.stagger: 19
         inner:
-          key.column_net: C_P_INNER
+          # key.column_net: C_P_INNER
+          key.column_net: P5
           key.stagger: 0.25ky
       rows:
         bottom:
           padding: ky
-          row_net: R_BOT
+          # row_net: R_BOT
+          row_net: P16
         home:
           padding: ky
-          row_net: R_HOME
+          # row_net: R_HOME
+          row_net: P14 
         top:
           padding: ky
-          row_net: R_TOP
+          # row_net: R_TOP
+          row_net: P15
     matrix:
       anchor:
         ref: pinky_inner_bottom
         shift: [20, 0]
       columns:
         ring:
-          key.column_net: C_M_RING
+          # key.column_net: C_M_RING
+          key.column_net: P6 
           key.splay: -5
           key.stagger: 0.66ky
         middle:
-          key.column_net: C_M_MIDDLE
+          # key.column_net: C_M_MIDDLE
+          key.column_net: P7
           key.stagger: 0.25ky
         index:
-          key.column_net: C_M_INDEX
+          # key.column_net: C_M_INDEX
+          key.column_net: P8
           key.stagger: -0.45ky
         inner:
-          key.column_net: C_M_INNER
+          # key.column_net: C_M_INNER
+          key.column_net: P9
           key.stagger: -0.15ky
       rows:
         bottom:
           padding: ky
-          row_net: R_BOT
+          # row_net: R_BOT
+          row_net: P16
         home:
           padding: ky
-          row_net: R_HOME
+          # row_net: R_HOME
+          row_net: P14
         top:
           padding: ky
-          row_net: R_TOP
+          # row_net: R_TOP
+          row_net: P15
     thumb_top:
       anchor:
         ref: matrix_index_bottom
@@ -81,14 +93,17 @@ points:
         rotate: -20
       columns:
         outer:
-          key.column_net: C_P_INNER
+          # key.column_net: C_P_INNER
+          key.column_net: P4
           key.spread: ky
         middle:
-          key.column_net: C_M_RING
+          # key.column_net: C_M_RING
+          key.column_net: P5
           key.spread: ky
       rows:
         row:
-          row_net: R_THUMB
+          # row_net: R_THUMB
+          row_net: P10
 
     thumb_bottom:
       anchor:
@@ -96,13 +111,16 @@ points:
         shift: [0, -ky]
       columns:
         outer:
-          key.column_net: C_M_MIDDLE
+          # key.column_net: C_M_MIDDLE
+          key.column_net: P6
           key.spread: ky
         middle:
-          key.column_net: C_M_INDEX
+          # key.column_net: C_M_INDEX
+          key.column_net: P7
           key.spread: ky
         inner:
-          key.column_net: C_M_INNER
+          # key.column_net: C_M_INNER
+          key.column_net: P8
           key.name: thumb_inner
           key.spread: 1.2kx
           # key.stagger: -0.7ky
@@ -115,7 +133,8 @@ points:
           # key.origin: [-0.5kx, -0.5ky]
       rows:
         row:
-          row_net: R_THUMB
+          # row_net: R_THUMB
+          row_net: P10
 
 outlines:
   raw:
