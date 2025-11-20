@@ -29,61 +29,49 @@ points:
         shift: [50,-100] # Fix KiCad placement
       columns:
         outer:
-          # key.column_net: C_P_OUTER
           key.column_net: P4
           rows.bottom.skip: true
           # key.stagger: 19
-        inner:
-          # key.column_net: C_P_INNER
+        innerp:
           key.column_net: P5
           key.stagger: 0.25ky
       rows:
         bottom:
           padding: ky
-          # row_net: R_BOT
           row_net: P16
         home:
           padding: ky
-          # row_net: R_HOME
           row_net: P14 
         top:
           padding: ky
-          # row_net: R_TOP
           row_net: P15
     matrix:
       anchor:
-        ref: pinky_inner_bottom
+        ref: pinky_innerp_bottom
         shift: [20, 0]
       columns:
         ring:
-          # key.column_net: C_M_RING
           key.column_net: P6 
           key.splay: -5
           key.stagger: 0.66ky
         middle:
-          # key.column_net: C_M_MIDDLE
           key.column_net: P7
           key.stagger: 0.25ky
         index:
-          # key.column_net: C_M_INDEX
           key.column_net: P8
           key.stagger: -0.45ky
         inner:
-          # key.column_net: C_M_INNER
           key.column_net: P9
           key.stagger: -0.15ky
       rows:
         bottom:
           padding: ky
-          # row_net: R_BOT
           row_net: P16
         home:
           padding: ky
-          # row_net: R_HOME
           row_net: P14
         top:
           padding: ky
-          # row_net: R_TOP
           row_net: P15
     thumb_top:
       anchor:
@@ -92,34 +80,28 @@ points:
         shift: [.8kx, -1.3ky]
         rotate: -20
       columns:
-        outer:
-          # key.column_net: C_P_INNER
+        outer_top:
           key.column_net: P4
           key.spread: ky
-        middle:
-          # key.column_net: C_M_RING
+        middle_top:
           key.column_net: P5
           key.spread: ky
       rows:
         row:
-          # row_net: R_THUMB
           row_net: P10
 
     thumb_bottom:
       anchor:
-        ref: thumb_top_outer_row
+        ref: thumb_top_outer_top_row
         shift: [0, -ky]
       columns:
-        outer:
-          # key.column_net: C_M_MIDDLE
+        outer_bottom:
           key.column_net: P6
           key.spread: ky
-        middle:
-          # key.column_net: C_M_INDEX
+        middle_bottom:
           key.column_net: P7
           key.spread: ky
         inner:
-          # key.column_net: C_M_INNER
           key.column_net: P8
           key.name: thumb_inner
           key.spread: 1.2kx
@@ -133,7 +115,6 @@ points:
           # key.origin: [-0.5kx, -0.5ky]
       rows:
         row:
-          # row_net: R_THUMB
           row_net: P10
 
 outlines:
@@ -156,9 +137,9 @@ outlines:
           shift: [-0.5px, 0.5py]
         - ref: pinky_outer_top
           shift: [0.5px - 1.5P, 0.5py]
-        - ref: pinky_inner_top
+        - ref: pinky_innerp_top
           shift: [-0.5px + 0.5P, 0.5py]
-        - ref: pinky_inner_top
+        - ref: pinky_innerp_top
           shift: [0.5px-P, 0.5py]
 
         ## matrix top
@@ -201,11 +182,11 @@ outlines:
           shift: [0.5px , -0.5py]
 
         ## thumb top
-        - ref: thumb_top_middle_row
+        - ref: thumb_top_middle_top_row
           shift: [-0.5px + 2P,0.5py]
-        - ref: thumb_top_middle_row
+        - ref: thumb_top_middle_top_row
           shift: [0.5px, 0.5py]
-        - ref: thumb_top_middle_row
+        - ref: thumb_top_middle_top_row
           shift: [0.5px, 0.5py - 7]
 
         ## joystick
@@ -225,15 +206,15 @@ outlines:
           shift: [-0.5px + P/2, -(13 + P)]
 
         ## thumb cluster bottom
-        - ref: thumb_bottom_middle_row
+        - ref: thumb_bottom_middle_bottom_row
           shift: [0.5px - P/2,-0.5py]
-        - ref: thumb_bottom_outer_row
+        - ref: thumb_bottom_outer_bottom_row
           shift: [-0.5px , -0.5py]
-        - ref: thumb_bottom_outer_row
+        - ref: thumb_bottom_outer_bottom_row
           shift: [-0.5px - P , -0.5py + P]
 
         ## pinky bottom
-        - ref: pinky_inner_bottom
+        - ref: pinky_innerp_bottom
           shift: [-0.5px,-0.5py]
         - ref: pinky_outer_home
           shift: [0.5px - P,-0.5py - P]
@@ -372,8 +353,8 @@ pcbs:
       mhole_pinky:
         what: mounting_hole_plated
         where:
-          # ref.aggregate.parts: [pinky_outer_home,pinky_inner_top]
-          ref.aggregate.parts: [pinky_outer_top,pinky_inner_home]
+          # ref.aggregate.parts: [pinky_outer_home,pinky_innerp_top]
+          ref.aggregate.parts: [pinky_outer_top,pinky_innerp_home]
 
       mhole_index:
         what: mounting_hole_plated
@@ -404,10 +385,10 @@ pcbs:
         what: mounting_hole_plated
         where:
           ref.aggregate.parts: [
-            thumb_top_middle_row,
-            thumb_bottom_middle_row,
-            thumb_top_outer_row,
-            thumb_bottom_outer_row
+            thumb_top_middle_top_row,
+            thumb_bottom_middle_bottom_row,
+            thumb_top_outer_top_row,
+            thumb_bottom_outer_bottom_row
           ]
  
       # mhole3:
