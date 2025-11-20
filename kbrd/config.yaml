@@ -176,6 +176,7 @@ pcbs:
           # reversable_pins: 13
           reversible: true
           reverse_mount: false
+          show_instructions: false
         where:
           ref: matrix_inner_num
           shift: [21,-1]
@@ -186,17 +187,8 @@ pcbs:
           r2: GND
         where:
           ref: matrix_inner_num
-          shift: [17, -44]
+          shift: [17, -34]
           rotate: -90
-      # on_off_switch:
-      #   what: pcm12
-      #   params:
-      #     from: sw1
-      #     to: RAW
-      #   where:
-      #     ref: matrix_inner_num
-      #     shift: [0, 0.5px + 2]
-      #     rotate: 180
       on_off_switch:
         what: pcm12
         params:
@@ -204,21 +196,30 @@ pcbs:
           to: RAW
         where:
           ref: matrix_inner_num
-          shift: [28, -44]
-          rotate: 90
-      # jack: 
-      #   what: trrs_pj320a
+          shift: [0, 0.5px + 2]
+          rotate: 180
+      # on_off_switch:
+      #   what: pcm12
       #   params:
-      #     reversible: true
-      #     symmetric: true
-      #     TP: VCC
-      #     R1: ""
-      #     R2: ""
-      #     SL: GND
+      #     from: sw1
+      #     to: RAW
       #   where:
       #     ref: matrix_inner_num
-      #     shift: [31, -44]
-      #     rotate: -90
+      #     shift: [28, -44]
+      #     rotate: 90
+      jack: 
+        what: trrs_pj320a
+        params:
+          reversible: true
+          symmetric: true
+          TP: VCC
+          R1: ""
+          R2: P0
+          SL: GND
+        where:
+          ref: matrix_inner_num
+          shift: [31, -45]
+          rotate: -90
       battery_connector:
         what: jst-s2b-ph-kl
         params:
@@ -226,14 +227,15 @@ pcbs:
           pos: sw1
         where:
           ref: matrix_inner_num
-          shift: [15,-34]
+          shift: [26,-35]
           rotate: 90
       encoder:
         what: rotary_encoder_ec11_ec12
         params:
+          reversible: true
           S1: P9
           S2: en_s2
-          A: P0
+          A: P19
           B: GND
           C: P1
         where:
@@ -242,6 +244,7 @@ pcbs:
       encoder_diode:
         what: diode_tht_sod123
         params:
+          reversible: true
           from: en_s2
           to: P10
         where:
@@ -289,7 +292,8 @@ pcbs:
         params:
           AD1: P21
           AD2: P20
-          SW: P19
+          SW0: P8
+          SW1: inner_rowb
         where:
           ref: thumb_bottom_inner_rowb
           shift: [-9, -8]
@@ -298,7 +302,8 @@ pcbs:
         params:
           AD1: P21
           AD2: P20
-          SW: P19
+          SW0: P8
+          SW1: inner_rowb
         where:
           ref: thumb_bottom_inner_rowb
           shift: [9, -8]
