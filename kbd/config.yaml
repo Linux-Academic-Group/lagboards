@@ -1,0 +1,101 @@
+units:
+  kx: U
+  ky: U
+  px: U+1
+  py: U+1
+points:
+  zones:
+    matrix:
+      key:
+        padding: px
+        spread: px
+      anchor:
+        shift: [150, -150]
+      columns:
+        outer:
+        pinky:
+          key.splay: -3
+        ring:
+          key.splay: -3
+          key.stagger: 3
+        middle:
+          key.splay: -4
+          key.stagger: 5
+          rows.mod.skip: true
+        index:
+          key.stagger: -5
+          key.splay: -3
+          rows.mod.skip: true
+        inner:
+          key.stagger: -6
+          rows.mod.skip: true
+    
+      rows:
+        mod:
+        bottom:
+        home:
+        top:
+        num:
+    thumbs:
+      anchor:
+        shift: [150, -148]
+      columns:
+        layer:
+          key.splay: -15
+        space:
+      rows:
+        cluster:
+          shift: [5ky,0.5ky]
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [kx,ky]
+  keys:
+      - what: rectangle
+        where: true
+        size: [kx-0.5, ky-0.5]
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_outer_num
+          shift: [-0.6px,0.6py]
+        - ref: matrix_ring_num
+          shift: [-0.6px,0.6py]
+        - ref: matrix_middle_num
+          shift: [0px,0.7py]
+        - ref: matrix_index_num
+          shift: [0.6px,0.6py]
+        - ref: matrix_inner_num
+          shift: [2px,0.5py]
+
+        - ref: thumbs_space_cluster
+          shift: [1px,-0.6py]
+
+
+
+        - ref: matrix_outer_mod
+          shift: [-0.6px,-0.6py]
+      fillet: 2
+  combo:
+    - name: board
+    - operation: subtract
+      name: keys
+pcbs:
+  kbd:
+    outlines:
+      main:
+        outline: board
+    footprints:
+      keys: 
+        what: mx
+        where:
+          - /matrix/
+          - /thumbs/
+        params:
+          keycaps: true
+          reverse: false
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
