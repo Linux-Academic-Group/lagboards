@@ -151,12 +151,14 @@ pcbs:
       main:
         outline: board
     footprints:
-      choc_hotswap:
-        what: mx
+      mx_hotswap:
+        what: switch_mx
         where: true
         params:
-          keycaps: true
-          reverse: true
+          include_keycap: true
+          hotswap_pads_same_side: true
+          include_traces_vias: true
+          reversible: true
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
@@ -165,10 +167,16 @@ pcbs:
         where: true
         params:
           reversible: true
+          include_traces_vias: true
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
           shift: [0, -5]
+      diode-key-route:
+        what: utility_router
+        where: true
+        params:
+          route: "f(-5.842 -5.08) (-6.5 -4) (-6.5 2) (-6 2.5) (1.2 2.5) (1.7 3) (1.7 5)"
       mcu:
         what: mcu_supermini_nrf52840
         params:
