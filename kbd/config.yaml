@@ -3,6 +3,10 @@ units:
   ky: U
   px: U+1
   py: U+1
+  mcux: 18
+  mcuy: 36
+  jacky: 6
+  jackx: 14
 points:
   zones:
     matrix:
@@ -99,3 +103,35 @@ pcbs:
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
+      mcu:
+        what: mcu_supermini_nrf52840
+        params:
+          # orientation: "down"
+          # reversable_pins: 13
+          reversible: true
+          reverse_mount: false
+        where:
+          - ref: matrix_inner_num
+            # te 2.5 bo ten footprint dodaje napis nad MCU
+            shift: [mcux + 0.25px, -0.5py] 
+            # rotate: -90
+      reset: 
+        what: wuerth-434121025816 
+        params:
+          r1: RST
+          r2: GND
+        where:
+          ref: matrix_inner_home
+          shift: [1.25px,0.3py]
+      jack: 
+        what: trrs
+        params:
+          reverse: true
+          A: ""
+          B: ""
+          C: ""
+          D: ""
+        where:
+          ref: matrix_inner_home
+          shift: [1.5px,-0.25py]
+          rotate: -90
