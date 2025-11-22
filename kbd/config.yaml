@@ -124,13 +124,14 @@ pcbs:
           ref: matrix_inner_home
           shift: [1.25px,0.3py]
       jack: 
-        what: trrs
+        what: trrs_pj320a
         params:
-          reverse: true
-          A: ""
-          B: ""
-          C: ""
-          D: ""
+          reversible: true
+          symmetric: true
+          TP: VCC
+          R1: ""
+          R2: P0
+          SL: GND
         where:
           ref: matrix_inner_home
           shift: [1.5px,-0.25py]
