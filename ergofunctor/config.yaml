@@ -240,7 +240,8 @@ pcbs:
       # TODO: dodać logo LAG (pingwinek) (patrz josukey)
       # TODO: dodać napis LAG
       keys:
-        what: mx
+        # what: mx
+        what: switch_mx
         where: 
           - /matrix/
           - /pinky/
@@ -250,8 +251,10 @@ pcbs:
         params:
           from: "{{column_net}}"
           to: "{{colrow}}"
-          keycaps: true
-          reverse: true
+          include_keycap: true
+          hotswap_pads_same_side: true
+          include_traces_vias: true
+          reversible: true
           hotswap: true
       diode:
         what: diode_tht_sod123
@@ -262,6 +265,13 @@ pcbs:
           to: "{{row_net}}"
         adjust:
           shift: [0, -5]
+
+      diode-key-route:
+        what: utility_router
+        where: true
+        params:
+          route: "f(-5.842 -5.08) (-6.5 -4) (-6.5 2) (-6 2.5) (1.2 2.5) (1.7 3) (1.7 5)"
+
       # mcu:
       #   # TODO: zmienić napisy z footprintu: promicro -> ergofunctor
       #   what: promicro_pretty
@@ -283,11 +293,13 @@ pcbs:
           # reversable_pins: 13
           reversible: true
           reverse_mount: false
+          show_instructions: false
         where:
           - ref: matrix_inner_top
             # te 2.5 bo ten footprint dodaje napis nad MCU
             shift: [0.5px + 0.5mcux, -0.5mcuy + 0.5ky + 2.5] 
             # rotate: -90
+
       reset: 
         what: wuerth-434121025816 
         params:
@@ -297,6 +309,7 @@ pcbs:
           ref: matrix_inner_top
           shift: [0.5px + 0mcux + 2, -mcuy]
           rotate: -90
+
       on_off_switch:
         what: pcm12
         params:
@@ -306,6 +319,7 @@ pcbs:
           ref: matrix_inner_top
           shift: [0.5px + mcux + 3, 5]
           rotate: 90
+
       battery_connector:
         what: jst-s2b-ph-kl
         params:
@@ -316,6 +330,7 @@ pcbs:
           # shift: [0.5px + mcux, -mcuy + 0.5ky - 0.5oledy - 1]
           shift: [0.5px + 0.5mcux, -mcuy]
           rotate: 90
+
       oled:
         what: oled_rev
         params:
@@ -328,12 +343,14 @@ pcbs:
           shift: [0.5px + 0.5mcux, -mcuy - 5]
           rotate: 180
 
+      # https://www.adafruit.com/product/5628
       joystick_left:
         what: joystick_left
         params:
           AD1: P21
           AD2: P20
-          SW: P19
+          SW0: P8
+          SW1: inner_rowb
         where:
           ref: thumb_inner
           shift: [-9, -8]
@@ -342,7 +359,8 @@ pcbs:
         params:
           AD1: P21
           AD2: P20
-          SW: P19
+          SW0: P8
+          SW1: inner_rowb
         where:
           ref: thumb_inner
           shift: [9, -8]
