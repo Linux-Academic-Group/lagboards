@@ -267,7 +267,23 @@
       },
       {
         "netclass": "Default",
+        "pattern": "P4"
+      },
+      {
+        "netclass": "Default",
         "pattern": "outer_mod"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "D2"
       },
       {
         "netclass": "Default",
@@ -284,6 +300,10 @@
       {
         "netclass": "Default",
         "pattern": "outer_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P5"
       },
       {
         "netclass": "Default",
@@ -307,6 +327,10 @@
       },
       {
         "netclass": "Default",
+        "pattern": "P6"
+      },
+      {
+        "netclass": "Default",
         "pattern": "ring_mod"
       },
       {
@@ -327,6 +351,10 @@
       },
       {
         "netclass": "Default",
+        "pattern": "P7"
+      },
+      {
+        "netclass": "Default",
         "pattern": "middle_bottom"
       },
       {
@@ -343,6 +371,10 @@
       },
       {
         "netclass": "Default",
+        "pattern": "P8"
+      },
+      {
+        "netclass": "Default",
         "pattern": "index_bottom"
       },
       {
@@ -356,6 +388,10 @@
       {
         "netclass": "Default",
         "pattern": "index_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P9"
       },
       {
         "netclass": "Default",
@@ -384,10 +420,6 @@
       {
         "netclass": "Default",
         "pattern": "RAW"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "GND"
       },
       {
         "netclass": "Default",
@@ -444,30 +476,6 @@
       {
         "netclass": "Default",
         "pattern": "P3"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P4"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P5"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P6"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P7"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P8"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "P9"
       },
       {
         "netclass": "Default",

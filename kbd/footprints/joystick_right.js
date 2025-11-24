@@ -5,8 +5,8 @@ module.exports = {
     AD1: { type: 'net', value: "AD1" },
     AD2: { type: 'net', value: "AD2" },
     GND: { type: 'net', value: "GND" },
-    GND: { type: 'net', value: "GND" },
-    SW: { type: 'net', value: "SW" },
+    SW0: { type: 'net', value: "SW0" },
+    SW1: { type: 'net', value: "SW1" },
     VCC: { type: 'net', value: "VCC" },
   },
   body: p => {
@@ -31,8 +31,8 @@ fp.push(`(embedded_fonts no)`);
 fp.push(`(pad "1" thru_hole oval (at -21.75 ${flipN(flip, -5.8)} ${flipR(flip, p.r + 180)}) (size 2.54 1.27) (drill 1) (layers "*.Cu" "*.Mask") (remove_unused_layers no)  ${p.VCC})`);
 fp.push(`(pad "2" thru_hole oval (at -21.75 ${flipN(flip, -7.8)} ${flipR(flip, p.r + 180)}) (size 2.54 1.27) (drill 1) (layers "*.Cu" "*.Mask") (remove_unused_layers no)  ${p.GND})`);
 fp.push(`(pad "3" thru_hole oval (at -21.75 ${flipN(flip, -9.8)} ${flipR(flip, p.r + 180)}) (size 2.54 1.27) (drill 1) (layers "*.Cu" "*.Mask") (remove_unused_layers no)  ${p.AD2})`);
-fp.push(`(pad "4" thru_hole oval (at -21.75 ${flipN(flip, -11.8)} ${flipR(flip, p.r + 180)}) (size 2.54 1.27) (drill 1) (layers "*.Cu" "*.Mask") (remove_unused_layers no)  ${p.SW})`);
-fp.push(`(pad "5" thru_hole oval (at -21.75 ${flipN(flip, -13.8)} ${flipR(flip, p.r + 180)}) (size 2.54 1.27) (drill 1) (layers "*.Cu" "*.Mask") (remove_unused_layers no)  ${p.GND})`);
+fp.push(`(pad "4" thru_hole oval (at -21.75 ${flipN(flip, -11.8)} ${flipR(flip, p.r + 180)}) (size 2.54 1.27) (drill 1) (layers "*.Cu" "*.Mask") (remove_unused_layers no)  ${p.SW0})`);
+fp.push(`(pad "5" thru_hole oval (at -21.75 ${flipN(flip, -13.8)} ${flipR(flip, p.r + 180)}) (size 2.54 1.27) (drill 1) (layers "*.Cu" "*.Mask") (remove_unused_layers no)  ${p.SW1})`);
 fp.push(`(pad "6" thru_hole oval (at -21.75 ${flipN(flip, -15.8)} ${flipR(flip, p.r + 0)}) (size 2.54 1.27) (drill 1) (layers "*.Cu" "*.Mask") (remove_unused_layers no)  ${p.AD1})`);
 fp.push(`(pad "7" thru_hole circle (at 0 ${flipN(flip, 0)} ${flipR(flip, p.r + 90)}) (size 3 3) (drill 2) (layers "*.Cu" "*.Mask") (remove_unused_layers no) )`);
 

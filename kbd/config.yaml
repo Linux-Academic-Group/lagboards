@@ -17,39 +17,53 @@ points:
         shift: [150, -150]
       columns:
         outer:
+          key.column_net: P4
         pinky:
           key.splay: -3
+          key.column_net: P5
         ring:
           key.splay: -3
           key.stagger: 3
+          key.column_net: P6
         middle:
           key.splay: -4
           key.stagger: 5
           rows.mod.skip: true
+          key.column_net: P7
         index:
           key.stagger: -5
           key.splay: -3
           rows.mod.skip: true
+          key.column_net: P8
         inner:
           key.stagger: -6
           rows.mod.skip: true
+          key.column_net: P9
     
       rows:
         mod:
+          row_net: P10
         bottom:
+          row_net: P16
         home:
+          row_net: P14
         top:
+          row_net: P15
         num:
+          row_net: P18
     thumbs:
       anchor:
         shift: [150, -148]
       columns:
         layer:
+          key.column_net: P8
           key.splay: -15
         space:
+          key.column_net: P9
       rows:
         cluster:
           shift: [5ky,0.5ky]
+          row_net: P10
 outlines:
   raw:
     - what: rectangle
@@ -93,13 +107,15 @@ pcbs:
         outline: board
     footprints:
       keys: 
-        what: mx
+        what: switch_mx
         where:
           - /matrix/
           - /thumbs/
         params:
-          keycaps: true
-          reverse: false
+          include_keycap: true
+          hotswap_pads_same_side: true
+          include_traces_vias: true
+          reversible: true
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
@@ -110,6 +126,7 @@ pcbs:
           # reversable_pins: 13
           reversible: true
           reverse_mount: false
+          show_instructions: false
         where:
           - ref: matrix_inner_num
             # te 2.5 bo ten footprint dodaje napis nad MCU
@@ -136,3 +153,17 @@ pcbs:
           ref: matrix_inner_home
           shift: [1.5px,-0.25py]
           rotate: -90
+      diode:
+        what: diode_tht_sod123
+        where: true
+        params:
+          reversible: true
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      diode-key-route:
+        what: utility_router
+        where: true
+        params:
+          route: "f(-5.842 -5.08) (-6.5 -4) (-6.5 2) (-6 2.5) (1.2 2.5) (1.7 3) (1.7 5)"
