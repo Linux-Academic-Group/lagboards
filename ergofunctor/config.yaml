@@ -350,7 +350,7 @@ pcbs:
           AD1: P21
           AD2: P20
           SW0: P8
-          SW1: inner_rowb
+          SW1: inner_row
         where:
           ref: thumb_inner
           shift: [-9, -8]
@@ -360,7 +360,7 @@ pcbs:
           AD1: P21
           AD2: P20
           SW0: P8
-          SW1: inner_rowb
+          SW1: inner_row
         where:
           ref: thumb_inner
           shift: [9, -8]
@@ -372,42 +372,40 @@ pcbs:
         what: mounting_hole_plated
         where:
           # ref.aggregate.parts: [pinky_outer_home,pinky_innerp_top]
-          ref.aggregate.parts: [pinky_outer_top,pinky_innerp_home]
+          ref.aggregate.parts:
+            - pinky_outer_top
+            - pinky_innerp_home
 
       mhole_index:
         what: mounting_hole_plated
         where:
-          ref.aggregate.parts: [
-            matrix_inner_top,
-            matrix_index_home
-          ]
+          ref.aggregate.parts:
+            - matrix_inner_top
+            - matrix_index_home
 
       mhole_middle_up:
         what: mounting_hole_plated
         where:
-          ref.aggregate.parts: [
-            matrix_ring_top,
-            matrix_middle_home
-          ]
+          ref.aggregate.parts:
+            - matrix_ring_top
+            - matrix_middle_home
 
       mhole_middle_down:
         what: mounting_hole_plated
         where:
-          ref.aggregate.parts: [
-            matrix_ring_bottom,
-            matrix_middle_bottom
-          ]
+          ref.aggregate.parts:
+            - matrix_ring_bottom
+            - matrix_middle_bottom
           shift: [0,-0.5ky]
 
       mhole_thumb:
         what: mounting_hole_plated
         where:
-          ref.aggregate.parts: [
-            thumb_top_middle_top_row,
-            thumb_bottom_middle_bottom_row,
-            thumb_top_outer_top_row,
-            thumb_bottom_outer_bottom_row
-          ]
+          ref.aggregate.parts:
+            - thumb_top_middle_top_row
+            - thumb_bottom_middle_bottom_row
+            - thumb_top_outer_top_row
+            - thumb_bottom_outer_bottom_row
  
       # mhole3:
       #   what: mounting_hole_plated
