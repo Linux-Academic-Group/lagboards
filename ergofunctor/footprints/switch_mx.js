@@ -474,40 +474,41 @@ module.exports = {
 		(layer "B.Cu")
 		(net ${p.from.index})
 	)
-
-	(segment
-    (start ${p.eaxy(-7.085, -4.415)})
-    (end ${p.eaxy(-7.085, -2.54)})
-    (width ${p.trace_width})
-    (locked ${p.locked_traces_vias ? 'yes' : 'no'})
-    (layer "B.Cu")
-    (net ${p.to.index})
-  )
-  (segment
-    (start ${p.eaxy(-7.75, -5.08)})
-    (end ${p.eaxy(-7.085, -4.415)})
-    (width ${p.trace_width})
-    (locked ${p.locked_traces_vias ? 'yes' : 'no'})
-    (layer "B.Cu")
-    (net ${p.to.index})
-  )
-  (via
-    (at ${p.eaxy(-7.75, -5.08)})
-		(size ${p.via_size})
-    (drill ${p.via_drill})
-    (layers "F.Cu" "B.Cu")
-    (locked ${p.locked_traces_vias ? 'yes' : 'no'})
-    (net ${p.to.index})
-  )
-  (segment
-    (start ${p.eaxy(-5.842, -5.08)})
-    (end ${p.eaxy(-7.75, -5.08)})
-    (width ${p.trace_width})
-    (locked ${p.locked_traces_vias ? 'yes' : 'no'})
-    (layer "F.Cu")
-    (net ${p.to.index})
-  )
     `
+
+	// (segment
+ //    (start ${p.eaxy(-7.085, -4.415)})
+ //    (end ${p.eaxy(-7.085, -2.54)})
+ //    (width ${p.trace_width})
+ //    (locked ${p.locked_traces_vias ? 'yes' : 'no'})
+ //    (layer "B.Cu")
+ //    (net ${p.to.index})
+ //  )
+ //  (segment
+ //    (start ${p.eaxy(-7.75, -5.08)})
+ //    (end ${p.eaxy(-7.085, -4.415)})
+ //    (width ${p.trace_width})
+ //    (locked ${p.locked_traces_vias ? 'yes' : 'no'})
+ //    (layer "B.Cu")
+ //    (net ${p.to.index})
+ //  )
+ //  (via
+ //    (at ${p.eaxy(-7.75, -5.08)})
+	// 	(size ${p.via_size})
+ //    (drill ${p.via_drill})
+ //    (layers "F.Cu" "B.Cu")
+ //    (locked ${p.locked_traces_vias ? 'yes' : 'no'})
+ //    (net ${p.to.index})
+ //  )
+ //  (segment
+ //    (start ${p.eaxy(-5.842, -5.08)})
+ //    (end ${p.eaxy(-7.75, -5.08)})
+ //    (width ${p.trace_width})
+ //    (locked ${p.locked_traces_vias ? 'yes' : 'no'})
+ //    (layer "F.Cu")
+ //    (net ${p.to.index})
+ //  )
+ //    `
 
     let final = common_top;
     if (p.include_corner_marks) {
