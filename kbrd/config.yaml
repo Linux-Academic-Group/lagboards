@@ -252,6 +252,7 @@ pcbs:
       encoder_diode:
         what: diode_tht_sod123
         params:
+          include_traces_vias: true
           reversible: true
           from: en_s2
           to: P10
