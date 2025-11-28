@@ -5101,6 +5101,49 @@
         
     )
         
+    (segment
+      (start 151.65 155)
+      (end 152.85 155)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 2)
+    )
+    (via
+      (at 152.85 155)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 2)
+    )
+    (segment
+      (start 152.85 155)
+      (end 151.65 155)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 2)
+    )
+    (segment
+      (start 148.35 155)
+      (end 147.15 155)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 49)
+    )
+    (via
+      (at 147.15 155)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 49)
+    )
+    (segment
+      (start 147.15 155)
+      (end 148.35 155)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 49)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5136,6 +5179,49 @@
         
     )
         
+    (segment
+      (start 151.65 134.95)
+      (end 152.85 134.95)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 6)
+    )
+    (via
+      (at 152.85 134.95)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 6)
+    )
+    (segment
+      (start 152.85 134.95)
+      (end 151.65 134.95)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 6)
+    )
+    (segment
+      (start 148.35 134.95)
+      (end 147.15 134.95)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 48)
+    )
+    (via
+      (at 147.15 134.95)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 48)
+    )
+    (segment
+      (start 147.15 134.95)
+      (end 148.35 134.95)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 48)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5171,6 +5257,49 @@
         
     )
         
+    (segment
+      (start 151.65 114.89999999999999)
+      (end 152.85 114.89999999999999)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 7)
+    )
+    (via
+      (at 152.85 114.89999999999999)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 7)
+    )
+    (segment
+      (start 152.85 114.89999999999999)
+      (end 151.65 114.89999999999999)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 7)
+    )
+    (segment
+      (start 148.35 114.89999999999999)
+      (end 147.15 114.89999999999999)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 47)
+    )
+    (via
+      (at 147.15 114.89999999999999)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 47)
+    )
+    (segment
+      (start 147.15 114.89999999999999)
+      (end 148.35 114.89999999999999)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 47)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5206,6 +5335,49 @@
         
     )
         
+    (segment
+      (start 151.65 94.85)
+      (end 152.85 94.85)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 8)
+    )
+    (via
+      (at 152.85 94.85)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 8)
+    )
+    (segment
+      (start 152.85 94.85)
+      (end 151.65 94.85)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 8)
+    )
+    (segment
+      (start 148.35 94.85)
+      (end 147.15 94.85)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 46)
+    )
+    (via
+      (at 147.15 94.85)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 46)
+    )
+    (segment
+      (start 147.15 94.85)
+      (end 148.35 94.85)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 46)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5241,6 +5413,49 @@
         
     )
         
+    (segment
+      (start 151.65 74.8)
+      (end 152.85 74.8)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 9)
+    )
+    (via
+      (at 152.85 74.8)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 9)
+    )
+    (segment
+      (start 152.85 74.8)
+      (end 151.65 74.8)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 9)
+    )
+    (segment
+      (start 148.35 74.8)
+      (end 147.15 74.8)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 45)
+    )
+    (via
+      (at 147.15 74.8)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 45)
+    )
+    (segment
+      (start 147.15 74.8)
+      (end 148.35 74.8)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 45)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5276,6 +5491,49 @@
         
     )
         
+    (segment
+      (start 171.4360589 155.07950200000002)
+      (end 172.63441440000003 155.1423052)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 11)
+    )
+    (via
+      (at 172.63441440000003 155.1423052)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 11)
+    )
+    (segment
+      (start 172.63441440000003 155.1423052)
+      (end 171.4360589 155.07950200000002)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 11)
+    )
+    (segment
+      (start 168.14058150000002 154.9067934)
+      (end 166.942226 154.8439902)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 49)
+    )
+    (via
+      (at 166.942226 154.8439902)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 49)
+    )
+    (segment
+      (start 166.942226 154.8439902)
+      (end 168.14058150000002 154.9067934)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 49)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5311,6 +5569,49 @@
         
     )
         
+    (segment
+      (start 172.4853948 135.05697980000002)
+      (end 173.6837503 135.119783)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 12)
+    )
+    (via
+      (at 173.6837503 135.119783)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 12)
+    )
+    (segment
+      (start 173.6837503 135.119783)
+      (end 172.4853948 135.05697980000002)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 12)
+    )
+    (segment
+      (start 169.1899174 134.8842712)
+      (end 167.9915619 134.821468)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 48)
+    )
+    (via
+      (at 167.9915619 134.821468)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 48)
+    )
+    (segment
+      (start 167.9915619 134.821468)
+      (end 169.1899174 134.8842712)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 48)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5346,6 +5647,49 @@
         
     )
         
+    (segment
+      (start 173.53473069999998 115.0344576)
+      (end 174.7330862 115.0972608)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 13)
+    )
+    (via
+      (at 174.7330862 115.0972608)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 13)
+    )
+    (segment
+      (start 174.7330862 115.0972608)
+      (end 173.53473069999998 115.0344576)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 13)
+    )
+    (segment
+      (start 170.2392533 114.861749)
+      (end 169.04089779999998 114.7989458)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 47)
+    )
+    (via
+      (at 169.04089779999998 114.7989458)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 47)
+    )
+    (segment
+      (start 169.04089779999998 114.7989458)
+      (end 170.2392533 114.861749)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 47)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5381,6 +5725,49 @@
         
     )
         
+    (segment
+      (start 174.58406659999997 95.0119354)
+      (end 175.7824221 95.0747386)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 14)
+    )
+    (via
+      (at 175.7824221 95.0747386)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 14)
+    )
+    (segment
+      (start 175.7824221 95.0747386)
+      (end 174.58406659999997 95.0119354)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 14)
+    )
+    (segment
+      (start 171.2885892 94.8392268)
+      (end 170.09023369999997 94.7764236)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 46)
+    )
+    (via
+      (at 170.09023369999997 94.7764236)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 46)
+    )
+    (segment
+      (start 170.09023369999997 94.7764236)
+      (end 171.2885892 94.8392268)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 46)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5416,6 +5803,49 @@
         
     )
         
+    (segment
+      (start 175.63340249999996 74.9894132)
+      (end 176.83175799999998 75.0522164)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 15)
+    )
+    (via
+      (at 176.83175799999998 75.0522164)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 15)
+    )
+    (segment
+      (start 176.83175799999998 75.0522164)
+      (end 175.63340249999996 74.9894132)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 15)
+    )
+    (segment
+      (start 172.33792509999998 74.81670460000001)
+      (end 171.13956959999996 74.7539014)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 45)
+    )
+    (via
+      (at 171.13956959999996 74.7539014)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 45)
+    )
+    (segment
+      (start 171.13956959999996 74.7539014)
+      (end 172.33792509999998 74.81670460000001)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 45)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5451,6 +5881,49 @@
         
     )
         
+    (segment
+      (start 191.3478488 153.1985288)
+      (end 192.5412751 153.3239629)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 17)
+    )
+    (via
+      (at 192.5412751 153.3239629)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 17)
+    )
+    (segment
+      (start 192.5412751 153.3239629)
+      (end 191.3478488 153.1985288)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 17)
+    )
+    (segment
+      (start 188.0659266 152.8535848)
+      (end 186.8725003 152.7281507)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 49)
+    )
+    (via
+      (at 186.8725003 152.7281507)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 49)
+    )
+    (segment
+      (start 186.8725003 152.7281507)
+      (end 188.0659266 152.8535848)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 49)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5486,6 +5959,49 @@
         
     )
         
+    (segment
+      (start 193.4436445 133.25836479999998)
+      (end 194.6370708 133.3837989)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 18)
+    )
+    (via
+      (at 194.6370708 133.3837989)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 18)
+    )
+    (segment
+      (start 194.6370708 133.3837989)
+      (end 193.4436445 133.25836479999998)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 18)
+    )
+    (segment
+      (start 190.1617223 132.91342079999998)
+      (end 188.968296 132.78798669999998)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 48)
+    )
+    (via
+      (at 188.968296 132.78798669999998)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 48)
+    )
+    (segment
+      (start 188.968296 132.78798669999998)
+      (end 190.1617223 132.91342079999998)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 48)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5521,6 +6037,49 @@
         
     )
         
+    (segment
+      (start 195.5394402 113.31820079999999)
+      (end 196.7328665 113.44363489999999)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 19)
+    )
+    (via
+      (at 196.7328665 113.44363489999999)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 19)
+    )
+    (segment
+      (start 196.7328665 113.44363489999999)
+      (end 195.5394402 113.31820079999999)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 19)
+    )
+    (segment
+      (start 192.257518 112.97325679999999)
+      (end 191.0640917 112.84782269999998)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 47)
+    )
+    (via
+      (at 191.0640917 112.84782269999998)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 47)
+    )
+    (segment
+      (start 191.0640917 112.84782269999998)
+      (end 192.257518 112.97325679999999)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 47)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5556,6 +6115,49 @@
         
     )
         
+    (segment
+      (start 197.6352359 93.37803679999999)
+      (end 198.8286622 93.5034709)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 20)
+    )
+    (via
+      (at 198.8286622 93.5034709)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 20)
+    )
+    (segment
+      (start 198.8286622 93.5034709)
+      (end 197.6352359 93.37803679999999)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 20)
+    )
+    (segment
+      (start 194.3533137 93.03309279999999)
+      (end 193.1598874 92.90765869999998)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 46)
+    )
+    (via
+      (at 193.1598874 92.90765869999998)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 46)
+    )
+    (segment
+      (start 193.1598874 92.90765869999998)
+      (end 194.3533137 93.03309279999999)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 46)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5591,6 +6193,49 @@
         
     )
         
+    (segment
+      (start 199.7310316 73.4378728)
+      (end 200.9244579 73.5633069)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 21)
+    )
+    (via
+      (at 200.9244579 73.5633069)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 21)
+    )
+    (segment
+      (start 200.9244579 73.5633069)
+      (end 199.7310316 73.4378728)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 21)
+    )
+    (segment
+      (start 196.4491094 73.0929288)
+      (end 195.2556831 72.96749469999999)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 45)
+    )
+    (via
+      (at 195.2556831 72.96749469999999)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 45)
+    )
+    (segment
+      (start 195.2556831 72.96749469999999)
+      (end 196.4491094 73.0929288)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 45)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5626,6 +6271,49 @@
         
     )
         
+    (segment
+      (start 214.93067430000005 130.64179649999997)
+      (end 216.11244360000003 130.85017429999996)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 23)
+    )
+    (via
+      (at 216.11244360000003 130.85017429999996)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 23)
+    )
+    (segment
+      (start 216.11244360000003 130.85017429999996)
+      (end 214.93067430000005 130.64179649999997)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 23)
+    )
+    (segment
+      (start 211.68080870000003 130.06875749999998)
+      (end 210.49903940000004 129.86037969999998)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 48)
+    )
+    (via
+      (at 210.49903940000004 129.86037969999998)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 48)
+    )
+    (segment
+      (start 210.49903940000004 129.86037969999998)
+      (end 211.68080870000003 130.06875749999998)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 48)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5661,6 +6349,49 @@
         
     )
         
+    (segment
+      (start 218.41232030000006 110.89640109999996)
+      (end 219.59408960000005 111.10477889999997)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 24)
+    )
+    (via
+      (at 219.59408960000005 111.10477889999997)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 24)
+    )
+    (segment
+      (start 219.59408960000005 111.10477889999997)
+      (end 218.41232030000006 110.89640109999996)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 24)
+    )
+    (segment
+      (start 215.16245470000004 110.32336209999997)
+      (end 213.98068540000006 110.11498429999996)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 47)
+    )
+    (via
+      (at 213.98068540000006 110.11498429999996)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 47)
+    )
+    (segment
+      (start 213.98068540000006 110.11498429999996)
+      (end 215.16245470000004 110.32336209999997)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 47)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5696,6 +6427,49 @@
         
     )
         
+    (segment
+      (start 221.89396630000007 91.15100569999996)
+      (end 223.07573560000006 91.35938349999996)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 25)
+    )
+    (via
+      (at 223.07573560000006 91.35938349999996)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 25)
+    )
+    (segment
+      (start 223.07573560000006 91.35938349999996)
+      (end 221.89396630000007 91.15100569999996)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 25)
+    )
+    (segment
+      (start 218.64410070000005 90.57796669999996)
+      (end 217.46233140000007 90.36958889999995)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 46)
+    )
+    (via
+      (at 217.46233140000007 90.36958889999995)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 46)
+    )
+    (segment
+      (start 217.46233140000007 90.36958889999995)
+      (end 218.64410070000005 90.57796669999996)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 46)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5731,6 +6505,49 @@
         
     )
         
+    (segment
+      (start 225.37561230000009 71.40561029999995)
+      (end 226.55738160000007 71.61398809999996)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 26)
+    )
+    (via
+      (at 226.55738160000007 71.61398809999996)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 26)
+    )
+    (segment
+      (start 226.55738160000007 71.61398809999996)
+      (end 225.37561230000009 71.40561029999995)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 26)
+    )
+    (segment
+      (start 222.12574670000006 70.83257129999996)
+      (end 220.94397740000008 70.62419349999995)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 45)
+    )
+    (via
+      (at 220.94397740000008 70.62419349999995)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 45)
+    )
+    (segment
+      (start 220.94397740000008 70.62419349999995)
+      (end 222.12574670000006 70.83257129999996)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 45)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5766,6 +6583,49 @@
         
     )
         
+    (segment
+      (start 234.5627149 139.28921799999998)
+      (end 235.73195900000002 139.55915929999998)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 28)
+    )
+    (via
+      (at 235.73195900000002 139.55915929999998)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 28)
+    )
+    (segment
+      (start 235.73195900000002 139.55915929999998)
+      (end 234.5627149 139.28921799999998)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 28)
+    )
+    (segment
+      (start 231.34729370000002 138.54687959999998)
+      (end 230.1780496 138.27693829999998)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 48)
+    )
+    (via
+      (at 230.1780496 138.27693829999998)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 48)
+    )
+    (segment
+      (start 230.1780496 138.27693829999998)
+      (end 231.34729370000002 138.54687959999998)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 48)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5801,6 +6661,49 @@
         
     )
         
+    (segment
+      (start 239.0729835 119.75309819999998)
+      (end 240.2422276 120.02303949999998)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 29)
+    )
+    (via
+      (at 240.2422276 120.02303949999998)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 29)
+    )
+    (segment
+      (start 240.2422276 120.02303949999998)
+      (end 239.0729835 119.75309819999998)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 29)
+    )
+    (segment
+      (start 235.8575623 119.01075979999999)
+      (end 234.6883182 118.74081849999999)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 47)
+    )
+    (via
+      (at 234.6883182 118.74081849999999)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 47)
+    )
+    (segment
+      (start 234.6883182 118.74081849999999)
+      (end 235.8575623 119.01075979999999)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 47)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5836,6 +6739,49 @@
         
     )
         
+    (segment
+      (start 243.58325209999998 100.21697839999999)
+      (end 244.7524962 100.48691969999999)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 30)
+    )
+    (via
+      (at 244.7524962 100.48691969999999)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 30)
+    )
+    (segment
+      (start 244.7524962 100.48691969999999)
+      (end 243.58325209999998 100.21697839999999)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 30)
+    )
+    (segment
+      (start 240.3678309 99.47464)
+      (end 239.1985868 99.2046987)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 46)
+    )
+    (via
+      (at 239.1985868 99.2046987)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 46)
+    )
+    (segment
+      (start 239.1985868 99.2046987)
+      (end 240.3678309 99.47464)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 46)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5871,6 +6817,49 @@
         
     )
         
+    (segment
+      (start 248.09352069999997 80.6808586)
+      (end 249.26276479999999 80.95079989999999)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 31)
+    )
+    (via
+      (at 249.26276479999999 80.95079989999999)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 31)
+    )
+    (segment
+      (start 249.26276479999999 80.95079989999999)
+      (end 248.09352069999997 80.6808586)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 31)
+    )
+    (segment
+      (start 244.8780995 79.9385202)
+      (end 243.70885539999998 79.6685789)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 45)
+    )
+    (via
+      (at 243.70885539999998 79.6685789)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 45)
+    )
+    (segment
+      (start 243.70885539999998 79.6685789)
+      (end 244.8780995 79.9385202)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 45)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5906,6 +6895,49 @@
         
     )
         
+    (segment
+      (start 252.7491282 149.645707)
+      (end 253.91837230000002 149.9156483)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 33)
+    )
+    (via
+      (at 253.91837230000002 149.9156483)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 33)
+    )
+    (segment
+      (start 253.91837230000002 149.9156483)
+      (end 252.7491282 149.645707)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 33)
+    )
+    (segment
+      (start 249.53370700000002 148.9033686)
+      (end 248.3644629 148.6334273)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 48)
+    )
+    (via
+      (at 248.3644629 148.6334273)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 48)
+    )
+    (segment
+      (start 248.3644629 148.6334273)
+      (end 249.53370700000002 148.9033686)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 48)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5941,6 +6973,49 @@
         
     )
         
+    (segment
+      (start 257.25939680000005 130.1095872)
+      (end 258.4286409 130.3795285)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 34)
+    )
+    (via
+      (at 258.4286409 130.3795285)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 34)
+    )
+    (segment
+      (start 258.4286409 130.3795285)
+      (end 257.25939680000005 130.1095872)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 34)
+    )
+    (segment
+      (start 254.04397560000004 129.3672488)
+      (end 252.87473150000002 129.0973075)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 47)
+    )
+    (via
+      (at 252.87473150000002 129.0973075)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 47)
+    )
+    (segment
+      (start 252.87473150000002 129.0973075)
+      (end 254.04397560000004 129.3672488)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 47)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5976,6 +7051,49 @@
         
     )
         
+    (segment
+      (start 261.76966540000006 110.5734674)
+      (end 262.9389095 110.8434087)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 35)
+    )
+    (via
+      (at 262.9389095 110.8434087)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 35)
+    )
+    (segment
+      (start 262.9389095 110.8434087)
+      (end 261.76966540000006 110.5734674)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 35)
+    )
+    (segment
+      (start 258.5542442 109.831129)
+      (end 257.38500010000007 109.5611877)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 46)
+    )
+    (via
+      (at 257.38500010000007 109.5611877)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 46)
+    )
+    (segment
+      (start 257.38500010000007 109.5611877)
+      (end 258.5542442 109.831129)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 46)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6011,6 +7129,49 @@
         
     )
         
+    (segment
+      (start 266.2799340000001 91.0373476)
+      (end 267.44917810000004 91.3072889)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 36)
+    )
+    (via
+      (at 267.44917810000004 91.3072889)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 36)
+    )
+    (segment
+      (start 267.44917810000004 91.3072889)
+      (end 266.2799340000001 91.0373476)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 36)
+    )
+    (segment
+      (start 263.06451280000005 90.29500920000001)
+      (end 261.8952687000001 90.02506790000001)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 45)
+    )
+    (via
+      (at 261.8952687000001 90.02506790000001)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 45)
+    )
+    (segment
+      (start 261.8952687000001 90.02506790000001)
+      (end 263.06451280000005 90.29500920000001)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 45)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6046,6 +7207,49 @@
         
     )
         
+    (segment
+      (start 244.76936880000002 168.70875110000003)
+      (end 245.92847980000002 169.01933400000001)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 37)
+    )
+    (via
+      (at 245.92847980000002 169.01933400000001)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 37)
+    )
+    (segment
+      (start 245.92847980000002 169.01933400000001)
+      (end 244.76936880000002 168.70875110000003)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 37)
+    )
+    (segment
+      (start 241.5818136 167.8546483)
+      (end 240.4227026 167.54406540000002)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 49)
+    )
+    (via
+      (at 240.4227026 167.54406540000002)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 49)
+    )
+    (segment
+      (start 240.4227026 167.54406540000002)
+      (end 241.5818136 167.8546483)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 49)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6081,6 +7285,49 @@
         
     )
         
+    (segment
+      (start 263.1219595 173.62631300000004)
+      (end 264.2810705 173.93689590000002)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 38)
+    )
+    (via
+      (at 264.2810705 173.93689590000002)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 38)
+    )
+    (segment
+      (start 264.2810705 173.93689590000002)
+      (end 263.1219595 173.62631300000004)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 38)
+    )
+    (segment
+      (start 259.9344043 172.77221020000002)
+      (end 258.7752933 172.46162730000003)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 49)
+    )
+    (via
+      (at 258.7752933 172.46162730000003)
+      (size 0.6)
+      (drill 0.3)
+      (layers "F.Cu" "B.Cu")
+      (net 49)
+    )
+    (segment
+      (start 258.7752933 172.46162730000003)
+      (end 259.9344043 172.77221020000002)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 49)
+    )
+    
 
   (segment
     (start 144.158 144.92) 
@@ -6133,51 +7380,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151.7 155) 
-    (end 151.7 153)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151.7 153) 
-    (end 151.2 152.5)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151.2 152.5) 
-    (end 144 152.5)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 144 152.5) 
-    (end 143.5 152)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 143.5 152) 
-    (end 143.5 148)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
@@ -6236,51 +7438,6 @@
     (net 0)
   )
 
-  (segment
-    (start 151.7 134.95) 
-    (end 151.7 132.95)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151.7 132.95) 
-    (end 151.2 132.45)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151.2 132.45) 
-    (end 144 132.45)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 144 132.45) 
-    (end 143.5 131.95)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 143.5 131.95) 
-    (end 143.5 127.94999999999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
 
   (segment
     (start 144.158 104.82) 
@@ -6333,51 +7490,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151.7 114.89999999999999) 
-    (end 151.7 112.89999999999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151.7 112.89999999999999) 
-    (end 151.2 112.39999999999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151.2 112.39999999999999) 
-    (end 144 112.39999999999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 144 112.39999999999999) 
-    (end 143.5 111.89999999999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 143.5 111.89999999999999) 
-    (end 143.5 107.89999999999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
@@ -6436,51 +7548,6 @@
     (net 0)
   )
 
-  (segment
-    (start 151.7 94.85) 
-    (end 151.7 92.85)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151.7 92.85) 
-    (end 151.2 92.35)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151.2 92.35) 
-    (end 144 92.35)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 144 92.35) 
-    (end 143.5 91.85)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 143.5 91.85) 
-    (end 143.5 87.85)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
 
   (segment
     (start 144.158 64.72) 
@@ -6533,51 +7600,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151.7 74.8) 
-    (end 151.7 72.8)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151.7 72.8) 
-    (end 151.2 72.3)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151.2 72.3) 
-    (end 144 72.3)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 144 72.3) 
-    (end 143.5 71.8)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 143.5 71.8) 
-    (end 143.5 67.8)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
@@ -6636,51 +7658,6 @@
     (net 0)
   )
 
-  (segment
-    (start 171.48599040000002 155.0821188) 
-    (end 171.59066230000002 153.0848597)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 171.59066230000002 153.0848597) 
-    (end 171.11751560000002 152.559377)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 171.11751560000002 152.559377) 
-    (end 163.9273829 152.1825581)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 163.9273829 152.1825581) 
-    (end 163.4542361 151.6570754)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 163.4542361 151.6570754) 
-    (end 163.6635799 147.6625572)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
 
   (segment
     (start 165.5312088 124.5986931) 
@@ -6733,51 +7710,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 172.5353263 135.0595966) 
-    (end 172.6399982 133.0623375)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 172.6399982 133.0623375) 
-    (end 172.1668515 132.53685480000001)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 172.1668515 132.53685480000001) 
-    (end 164.9767188 132.1600359)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 164.9767188 132.1600359) 
-    (end 164.503572 131.6345532)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 164.503572 131.6345532) 
-    (end 164.7129158 127.640035)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
@@ -6836,51 +7768,6 @@
     (net 0)
   )
 
-  (segment
-    (start 173.5846622 115.03707440000001) 
-    (end 173.6893341 113.0398153)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 173.6893341 113.0398153) 
-    (end 173.2161874 112.5143326)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 173.2161874 112.5143326) 
-    (end 166.02605469999997 112.1375137)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 166.02605469999997 112.1375137) 
-    (end 165.55290789999998 111.612031)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 165.55290789999998 111.612031) 
-    (end 165.76225169999998 107.6175128)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
 
   (segment
     (start 167.62988059999998 84.55364870000001) 
@@ -6933,51 +7820,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 174.63399809999999 95.01455220000001) 
-    (end 174.73866999999998 93.0172931)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 174.73866999999998 93.0172931) 
-    (end 174.26552329999998 92.4918104)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 174.26552329999998 92.4918104) 
-    (end 167.07539059999996 92.1149915)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 167.07539059999996 92.1149915) 
-    (end 166.60224379999997 91.5895088)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 166.60224379999997 91.5895088) 
-    (end 166.81158759999997 87.5949906)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
@@ -7036,51 +7878,6 @@
     (net 0)
   )
 
-  (segment
-    (start 175.68333399999997 74.99203000000001) 
-    (end 175.78800589999997 72.9947709)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 175.78800589999997 72.9947709) 
-    (end 175.31485919999997 72.46928820000001)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 175.31485919999997 72.46928820000001) 
-    (end 168.12472649999995 72.0924693)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 168.12472649999995 72.0924693) 
-    (end 167.65157969999996 71.5669866)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 167.65157969999996 71.5669866) 
-    (end 167.86092349999996 67.5724684)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
 
   (segment
     (start 184.9505377 142.3906208) 
@@ -7133,51 +7930,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 191.39757490000002 153.2037552) 
-    (end 191.6066318 151.2147114)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 191.6066318 151.2147114) 
-    (end 191.1616351 150.6651862)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 191.1616351 150.6651862) 
-    (end 184.0010775 149.9125813)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 184.0010775 149.9125813) 
-    (end 183.55608080000002 149.3630561)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 183.55608080000002 149.3630561) 
-    (end 183.9741946 145.38496849999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
@@ -7236,51 +7988,6 @@
     (net 0)
   )
 
-  (segment
-    (start 193.49337060000002 133.26359119999998) 
-    (end 193.7024275 131.2745474)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 193.7024275 131.2745474) 
-    (end 193.2574308 130.72502219999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 193.2574308 130.72502219999998) 
-    (end 186.0968732 129.9724173)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 186.0968732 129.9724173) 
-    (end 185.65187650000001 129.42289209999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 185.65187650000001 129.42289209999998) 
-    (end 186.0699903 125.44480449999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
 
   (segment
     (start 189.1421291 102.51029279999999) 
@@ -7333,51 +8040,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 195.58916630000002 113.32342719999998) 
-    (end 195.7982232 111.33438339999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 195.7982232 111.33438339999998) 
-    (end 195.3532265 110.78485819999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 195.3532265 110.78485819999999) 
-    (end 188.1926689 110.03225329999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 188.1926689 110.03225329999998) 
-    (end 187.7476722 109.48272809999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 187.7476722 109.48272809999999) 
-    (end 188.165786 105.50464049999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
@@ -7436,51 +8098,6 @@
     (net 0)
   )
 
-  (segment
-    (start 197.684962 93.38326319999999) 
-    (end 197.8940189 91.39421939999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 197.8940189 91.39421939999998) 
-    (end 197.4490222 90.84469419999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 197.4490222 90.84469419999999) 
-    (end 190.2884646 90.09208929999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 190.2884646 90.09208929999998) 
-    (end 189.8434679 89.54256409999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 189.8434679 89.54256409999999) 
-    (end 190.2615817 85.56447649999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
 
   (segment
     (start 193.3337205 62.62996479999999) 
@@ -7533,51 +8150,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 199.7807577 73.44309919999999) 
-    (end 199.9898146 71.45405539999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 199.9898146 71.45405539999999) 
-    (end 199.5448179 70.9045302)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 199.5448179 70.9045302) 
-    (end 192.3842603 70.15192529999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 192.3842603 70.15192529999999) 
-    (end 191.9392636 69.6024001)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 191.9392636 69.6024001) 
-    (end 192.3573774 65.62431249999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
@@ -7636,51 +8208,6 @@
     (net 0)
   )
 
-  (segment
-    (start 214.97991470000002 130.65047889999997) 
-    (end 215.32721100000003 128.68086339999996)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 215.32721100000003 128.68086339999996) 
-    (end 214.92163130000003 128.10163539999996)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 214.92163130000003 128.10163539999996) 
-    (end 207.83101540000004 126.85136849999996)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 207.83101540000004 126.85136849999996) 
-    (end 207.42543570000004 126.27214059999997)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 207.42543570000004 126.27214059999997) 
-    (end 208.12002840000002 122.33290949999997)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
 
   (segment
     (start 212.78451420000005 99.66856679999997) 
@@ -7733,51 +8260,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 218.46156070000004 110.90508349999996) 
-    (end 218.80885700000005 108.93546799999996)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 218.80885700000005 108.93546799999996) 
-    (end 218.40327730000004 108.35623999999996)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 218.40327730000004 108.35623999999996) 
-    (end 211.31266140000005 107.10597309999996)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 211.31266140000005 107.10597309999996) 
-    (end 210.90708170000005 106.52674519999997)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 210.90708170000005 106.52674519999997) 
-    (end 211.60167440000004 102.58751409999996)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
@@ -7836,51 +8318,6 @@
     (net 0)
   )
 
-  (segment
-    (start 221.94320670000005 91.15968809999995) 
-    (end 222.29050300000006 89.19007259999995)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 222.29050300000006 89.19007259999995) 
-    (end 221.88492330000005 88.61084459999995)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 221.88492330000005 88.61084459999995) 
-    (end 214.79430740000006 87.36057769999995)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 214.79430740000006 87.36057769999995) 
-    (end 214.38872770000006 86.78134979999996)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 214.38872770000006 86.78134979999996) 
-    (end 215.08332040000005 82.84211869999996)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
 
   (segment
     (start 219.74780620000007 60.177775999999945) 
@@ -7933,51 +8370,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 225.42485270000006 71.41429269999995) 
-    (end 225.77214900000007 69.44467719999994)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 225.77214900000007 69.44467719999994) 
-    (end 225.36656930000007 68.86544919999994)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 225.36656930000007 68.86544919999994) 
-    (end 218.27595340000008 67.61518229999994)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 218.27595340000008 67.61518229999994) 
-    (end 217.87037370000007 67.03595439999995)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 217.87037370000007 67.03595439999995) 
-    (end 218.56496640000006 63.096723299999944)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
@@ -8036,51 +8428,6 @@
     (net 0)
   )
 
-  (segment
-    (start 234.6114334 139.30046559999997) 
-    (end 235.0613355 137.3517255)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 235.0613355 137.3517255) 
-    (end 234.68662600000002 136.75206489999997)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 234.68662600000002 136.75206489999997) 
-    (end 227.6711616 135.1324173)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 227.6711616 135.1324173) 
-    (end 227.2964521 134.5327568)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 227.2964521 134.5327568) 
-    (end 228.19625630000002 130.63527649999997)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
 
   (segment
     (start 234.0405096 108.24611469999998) 
@@ -8133,51 +8480,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 239.121702 119.76434579999997) 
-    (end 239.5716041 117.81560569999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 239.5716041 117.81560569999998) 
-    (end 239.1968946 117.21594509999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 239.1968946 117.21594509999998) 
-    (end 232.1814302 115.59629749999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 232.1814302 115.59629749999998) 
-    (end 231.8067207 114.99663699999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 231.8067207 114.99663699999998) 
-    (end 232.7065249 111.09915669999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
@@ -8236,51 +8538,6 @@
     (net 0)
   )
 
-  (segment
-    (start 243.6319706 100.22822599999998) 
-    (end 244.0818727 98.27948589999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 244.0818727 98.27948589999998) 
-    (end 243.7071632 97.67982529999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 243.7071632 97.67982529999999) 
-    (end 236.69169879999998 96.06017769999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 236.69169879999998 96.06017769999998) 
-    (end 236.3169893 95.46051719999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 236.3169893 95.46051719999998) 
-    (end 237.2167935 91.56303689999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
 
   (segment
     (start 243.06104679999999 69.17387509999999) 
@@ -8333,51 +8590,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 248.14223919999998 80.69210619999998) 
-    (end 248.59214129999998 78.74336609999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 248.59214129999998 78.74336609999999) 
-    (end 248.21743179999999 78.1437055)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 248.21743179999999 78.1437055) 
-    (end 241.20196739999997 76.52405789999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 241.20196739999997 76.52405789999999) 
-    (end 240.82725789999998 75.92439739999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 240.82725789999998 75.92439739999999) 
-    (end 241.72706209999998 72.02691709999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
@@ -8436,51 +8648,6 @@
     (net 0)
   )
 
-  (segment
-    (start 252.7978467 149.65695459999998) 
-    (end 253.2477488 147.7082145)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 253.2477488 147.7082145) 
-    (end 252.87303930000002 147.10855389999998)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 252.87303930000002 147.10855389999998) 
-    (end 245.8575749 145.4889063)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 245.8575749 145.4889063) 
-    (end 245.4828654 144.8892458)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 245.4828654 144.8892458) 
-    (end 246.3826696 140.99176549999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
 
   (segment
     (start 252.22692290000003 118.60260369999999) 
@@ -8533,51 +8700,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 257.30811530000005 130.12083479999998) 
-    (end 257.7580174 128.1720947)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 257.7580174 128.1720947) 
-    (end 257.38330790000003 127.5724341)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 257.38330790000003 127.5724341) 
-    (end 250.36784350000002 125.95278649999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 250.36784350000002 125.95278649999999) 
-    (end 249.99313400000003 125.35312599999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 249.99313400000003 125.35312599999999) 
-    (end 250.89293820000003 121.45564569999999)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
@@ -8636,51 +8758,6 @@
     (net 0)
   )
 
-  (segment
-    (start 261.8183839000001 110.58471499999999) 
-    (end 262.26828600000005 108.6359749)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 262.26828600000005 108.6359749) 
-    (end 261.89357650000005 108.0363143)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 261.89357650000005 108.0363143) 
-    (end 254.87811210000004 106.4166667)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 254.87811210000004 106.4166667) 
-    (end 254.50340260000004 105.8170062)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 254.50340260000004 105.8170062) 
-    (end 255.40320680000005 101.9195259)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
 
   (segment
     (start 261.24746010000007 79.5303641) 
@@ -8733,51 +8810,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 266.3286525000001 91.0485952) 
-    (end 266.77855460000006 89.0998551)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 266.77855460000006 89.0998551) 
-    (end 266.40384510000007 88.5001945)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 266.40384510000007 88.5001945) 
-    (end 259.3883807000001 86.8805469)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 259.3883807000001 86.8805469) 
-    (end 259.0136712000001 86.2808864)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 259.0136712000001 86.2808864) 
-    (end 259.9134754000001 82.3834061)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
@@ -8836,51 +8868,6 @@
     (net 0)
   )
 
-  (segment
-    (start 244.8176651 168.7216921) 
-    (end 245.3353032 166.78984050000003)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 245.3353032 166.78984050000003) 
-    (end 244.9817498 166.177468)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 244.9817498 166.177468) 
-    (end 238.0270838 164.31397090000002)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 238.0270838 164.31397090000002) 
-    (end 237.6735304 163.70159850000002)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 237.6735304 163.70159850000002) 
-    (end 238.7088066 159.83789520000002)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
 
   (segment
     (start 258.4941392 161.95070840000002) 
@@ -8933,51 +8920,6 @@
     (width 0.25)
     (locked no)
     (layer F.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 263.1702558 173.63925400000002) 
-    (end 263.6878939 171.70740240000003)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 263.6878939 171.70740240000003) 
-    (end 263.3343405 171.09502990000001)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 263.3343405 171.09502990000001) 
-    (end 256.3796745 169.23153280000002)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 256.3796745 169.23153280000002) 
-    (end 256.0261211 168.61916040000003)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 256.0261211 168.61916040000003) 
-    (end 257.0613973 164.75545710000003)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
     (net 0)
   )
 
