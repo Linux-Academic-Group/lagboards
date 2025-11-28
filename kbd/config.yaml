@@ -166,4 +166,48 @@ pcbs:
         what: utility_router
         where: true
         params:
-          route: "f(-5.842 -5.08) (-6.5 -4) (-6.5 2) (-6 2.5) (1.2 2.5) (1.7 3) (1.7 5)"
+          route: "f(-5.842 -5.08) (-6.5 -4) (-6.5 2) (-6 2.5) (1.2 2.5) (1.7 3) (1.7 5) b(1.7 3) (1.2 2.5) (-6 2.5) (-6.5 2) (-6.5 -2)"
+
+      mhole_middle_down:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts:
+            - matrix_ring_home
+            - matrix_middle_home
+          shift: [0.5ky,-3ky]
+
+      mhole_right_down:
+        what: mounting_hole_plated
+        where:
+          ref: thumbs_space_cluster
+          shift: [0.75kx, -0.45kx]
+      mhole_left_down:
+        what: mounting_hole_plated
+        where:
+          ref: matrix_outer_mod
+          shift: [-0.5kx, -0.5kx]
+      mhole_left_up:
+        what: mounting_hole_plated
+        where:
+          ref: matrix_outer_num
+          shift: [0.65kx, 0.5kx]
+      mhole_middle_up:
+        what: mounting_hole_plated
+        where:
+          ref: matrix_ring_num
+          shift: [0.65kx, 0.6kx]
+      mhole_right_up:
+        what: mounting_hole_plated
+        where:
+          ref: matrix_inner_num
+          shift: [0.65kx, 0.6kx]
+      mhole_middle_middle_right:
+        what: mounting_hole_plated
+        where:
+          ref: matrix_middle_home
+          shift: [0.6kx,0.25py]
+      mhole_middle_middle_left:
+        what: mounting_hole_plated
+        where:
+          ref: matrix_pinky_home
+          shift: [0.6kx,0.5py]
