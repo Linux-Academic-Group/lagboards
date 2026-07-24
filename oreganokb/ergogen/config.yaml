@@ -1,0 +1,320 @@
+meta:
+  engine: 4.1.0
+units:
+  units:
+  # Proxy Spacing Variables
+  kx: cx
+  ky: cy
+  # Padding Variables
+  px: kx + 2
+  py: ky + 2
+
+  # demo output keysize
+  $default_width: cx
+  $default_height: cy
+
+  # board padding (some points need manual correction for now)
+  bp: 1
+
+  # mcu shift
+  mcux: 21
+  mcuy: -8
+
+  # inner-side border distance from mcu
+  innerborderx: mcux + 12
+
+  # key gap
+  keygap: 0.5
+
+points:
+  zones:
+    matrix:
+      anchor.shift: [50, -100]
+      key:
+        padding: 1ky+keygap
+        spread: 1kx+keygap
+      columns:
+        outer:
+          rows.bottom.skip: true
+          key.column_net: P4
+        pinky:
+          key.stagger: ky / 2 - 2
+          key.column_net: P5
+        ring:
+          key.stagger: 13
+          key.column_net: P6
+        middle:
+          key.stagger: 5
+          key.column_net: P7
+        index:
+          key.stagger: -6
+          key.column_net: P8
+        inner:
+          key.column_net: P9
+      rows:
+        bottom.row_net: P16
+        home.row_net: P14
+        top.row_net: P15
+    thumb:
+      key:
+        padding: 1ky
+        spread: 1kx
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-1/3kx, -ky-3]
+      columns:
+        near:
+          key:
+            splay: -10
+            column_net: P4
+        home:
+          key:
+            splay: -16
+            shift: [4.5, -3]
+            column_net: P5
+        far:
+          key:
+            splay: -16
+            shift: [9.5, -4.5]
+            column_net: P6
+      rows.row.row_net: P10
+
+  # # Mirror and rotate for preview:
+  #
+  # rotate: -25
+  # mirror: &mirror
+  #     ref: matrix_inner_bottom
+  #     distance: 5kx
+
+
+outlines:
+  keys:
+    - what: rectangle
+      where: true
+      # size: [kx,ky]
+      size: [kx-0.1,ky-0.1]
+      # size: [kx-0.5,ky-0.5]
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_pinky_bottom
+          shift: [0.5px+bp,-0.5py-bp]
+        - ref: matrix_pinky_bottom
+          shift: [-0.5px-bp,-0.5py-bp]
+        - ref: matrix_outer_home
+          shift: [0.5px+keygap-2-bp,-0.5py-bp]
+        - ref: matrix_outer_home
+          shift: [-0.5px-bp,-0.5py-bp]
+        - ref: matrix_outer_top
+          shift: [-0.5px-bp,0.5py+bp]
+        - ref: matrix_outer_top
+          shift: [0.5px+keygap-2-bp,0.5py+bp]
+        - ref: matrix_pinky_top
+          shift: [-0.5px-bp,0.5py+bp]
+        - ref: matrix_pinky_top
+          shift: [0.5px+keygap-2-bp,0.5py+bp]
+        - ref: matrix_ring_top
+          shift: [-0.5px-bp,0.5py+bp]
+        - ref: matrix_ring_top
+          shift: [0.5px+keygap-2-bp,0.5py+bp]
+        - ref: matrix_middle_top
+          shift: [-0.5px-bp,0.5py+bp]
+        - ref: matrix_middle_top
+          shift: [0.5px+bp,0.5py+bp]
+        - ref: matrix_index_top
+          shift: [-0.5px-keygap+2+bp,0.5py+bp]
+        - ref: matrix_inner_top
+          shift: [innerborderx,0.5py+bp]
+        - ref: matrix_inner_bottom
+          shift: [innerborderx,-0.5py-bp]
+        # - ref: thumb_far_row
+        #   shift: [-0.5px-bp,0.5px+bp+7.6]
+        - ref: thumb_far_row
+          shift: [0.5px+bp,0.5py+bp]
+        - ref: thumb_far_row
+          shift: [0.5px+bp,-0.5py-bp]
+        - ref: thumb_far_row
+          shift: [-0.5px-bp,-0.5py-bp]
+        - ref: thumb_home_row
+          shift: [-0.5px-bp,-0.5py-bp]
+        - ref: thumb_near_row
+          shift: [-0.5px-bp,-0.5py-bp]
+        - ref: matrix_pinky_bottom
+          shift: [3kx-bp,-0.5py-bp]
+      fillet: 2
+  combo:
+    - name: board
+    # - operation: add
+    - operation: subtract
+      name: keys
+
+
+pcbs:
+  oregano:
+    template: kicad8
+    outlines:
+      main:
+        outline: board
+    footprints:
+      
+      choc_hotswap:
+        what: switch_choc_v1_v2
+        where: true
+        params:
+          # default (but important)
+          hotswap: true
+          include_traces_vias: true
+          # modified
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          choc_v2_support: false
+          include_corner_marks: true
+          reversible: true
+          # solder: true
+          hotswap_pads_same_side: true
+          include_keycap: true
+          keycap_height: 17
+      
+      diode:
+        what: diode_tht_sod123
+        where: true
+        params:
+          reversible: true
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+          include_traces_vias: true
+        adjust:
+          shift: [0, -3.4]
+      
+      # diode-key-route: # TODO
+      #   what: utility_router
+      #   where: true
+      #   params:
+          # route: "f(-5.842 -5.08) (-6.5 -4) (-6.5 2) (-6 2.5) (1.2 2.5) (1.7 3) (1.7 5)"
+
+      mcu:
+        what: mcu_supermini_nrf52840
+        # what: mcu_nice_nano
+        where:
+          ref: matrix_inner_top
+          shift: [mcux,mcuy]
+        params:
+          reversible: true
+          reverse_mount: true
+          show_instructions: true
+      
+      display:
+        what: display_nice_view
+        where:
+          ref: matrix_inner_top
+          shift: [mcux,mcuy-3.5]
+        params:
+          reversible: true
+          invert_jumpers_position: true
+          CS: P1 # Default pinout from website:
+          # https://nicekeyboards.com/docs/nice-view/pinout-schematic
+
+          MOSI: P2 # MOSI: "DA" # SDA: P2
+          SCK: P3 # SCK: "CL" # SCL: P3
+
+      reset:
+        what: wuerth-434121025816 
+        params:
+          r1: RST
+          r2: GND
+        where:
+          ref: matrix_inner_top
+          shift: [mcux, mcuy-31.5]
+
+      # battery_connector2:
+      #   what: jst-s2b-ph-kl
+      #   params:
+      #     neg: GND
+      #     pos: sw1 # BAT_P? (reminder, just in case)
+      #     # Info from footprint file:
+      #     # params: {
+      #     #   pos: { type: 'net', value: 'pos' },
+      #     #   neg: { type: 'net', value: 'neg' },
+      #     # }, 
+      #   where:
+      #     ref: matrix_inner_top
+      #     shift: [23, -41]
+      #     rotate: 90
+        
+      battery_connector:
+        what: battery_connector_jst_ph_2
+        params:
+          reversible: true
+          BAT_P: BAT_P
+          BAT_N: GND
+          # Info from footprint file:
+          # (params:)
+          # BAT_P: { type: 'net', value: 'BAT_P' },
+          # BAT_N: { type: 'net', value: 'GND' },
+        where:
+          ref: matrix_inner_top
+          shift: [mcux+6, mcuy-39]
+          rotate: 270
+
+      on_off_switch:
+        what: pcm12
+        params:
+          from: BAT_P
+          to: RAW
+        where:
+          ref: matrix_inner_top
+          shift: [34.5, -53.5]
+          rotate: 115.4
+
+      mhole_pinky:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts:
+            - matrix_outer_top
+            - matrix_pinky_home
+          shift: [0.25, 3.15]
+      
+      mhole_middle_low:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts:
+            - matrix_ring_bottom
+            - matrix_middle_bottom
+          shift: [0,-3]
+      
+      mhole_middle_high:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts:
+            - matrix_middle_top
+            - matrix_middle_home
+          shift: [-9-0.5*keygap,0]
+
+      mhole_index:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts:
+            - matrix_index_top
+            - matrix_index_home
+            - matrix_inner_top
+            - matrix_inner_home
+
+      mhole_thumb:
+        what: mounting_hole_plated
+        where:
+          ref.aggregate.parts:
+            - thumb_far_row
+            - thumb_home_row
+
+      mhole_display_outer:
+        what: mounting_hole_plated
+        where:
+          ref: matrix_inner_top
+          shift: [mcux-8, mcuy-25]
+      
+      mhole_display_inner:
+        what: mounting_hole_plated
+        where:
+          ref: matrix_inner_top
+          shift: [mcux+8, mcuy-25]

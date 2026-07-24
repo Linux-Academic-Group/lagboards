@@ -1,0 +1,5 @@
+config SHIELD_OREGANO_LEFT
+    def_bool $(shields_list_contains,oregano_left)
+
+config SHIELD_OREGANO_RIGHT
+    def_bool $(shields_list_contains,oregano_right)

@@ -1,0 +1,16 @@
+if SHIELD_OREGANO_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Oregano"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_OREGANO_LEFT
+
+if SHIELD_OREGANO_LEFT || SHIELD_OREGANO_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_OREGANO_LEFT || SHIELD_OREGANO_RIGHT
