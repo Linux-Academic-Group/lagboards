@@ -1,0 +1,19 @@
+file_format: "1"
+id: ergofunctor
+name: ergofunctor
+type: shield
+
+# Set this to a URL that documents the keyboard.
+url: https://example.com
+
+features:
+  - keys
+  - studio
+  - display
+
+requires:
+  - pro_micro
+
+siblings:
+  - ergofunctor_left
+  - ergofunctor_right
